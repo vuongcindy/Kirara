@@ -7,10 +7,10 @@ class User < ApplicationRecord
 
     after_initialize :ensure_session_token
 
-    has_many :profiles,
-        primary_key: :id,
-        foreign_key: user_id:,
-        class_name: :Profile
+    # has_many :profiles,
+    #     primary_key: :id,
+    #     foreign_key: user_id:,
+    #     class_name: :Profile
 
     def self.find_by_credentials(email, password)
         @user = User.find_by(email: email)
@@ -24,8 +24,8 @@ class User < ApplicationRecord
     end
 
     def password=(password)
-        self.password_digest = BCrypt::Password.create(password)
         @password = password
+        self.password_digest = BCrypt::Password.create(password)
     end
 
     def is_password?(password)
@@ -39,6 +39,7 @@ class User < ApplicationRecord
         self.session_token
     end
 
+    private
     def ensure_session_token
         self.session_token ||= SecureRandom::urlsafe_base64
     end
