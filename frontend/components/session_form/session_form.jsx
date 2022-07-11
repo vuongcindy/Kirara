@@ -1,4 +1,5 @@
 import React from "react";
+import { logout } from "../../actions/session_actions"
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -16,6 +17,10 @@ class SessionForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
     };
+
+    componentWillUnmount() {
+        this.props.removeErrors();
+    }
 
     update(field) {
         return e => this.setState({
