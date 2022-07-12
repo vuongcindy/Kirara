@@ -17,12 +17,12 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
-    };
+    }
 
-    demoLogin(e) {
-        e.preventDefault();
+    demoLogin() {
+        // e.preventDefault();
         const demoUser = { email: 'demo@gmail.com', password: '123456'}
-        this.props.processForm(demoUser)
+        this.props.processForm(demoUser);
     }
 
     componentWillUnmount() {
