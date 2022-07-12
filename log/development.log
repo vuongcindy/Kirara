@@ -3280,3 +3280,35 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 330ms (Views: 325.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2022-07-11 17:01:55 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cindyvuong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aru8LAGZGP1vHk5n5TaEGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 1525ms (Views: 1500.8ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/" for ::1 at 2022-07-11 17:02:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aru8LAGZGP1vHk5n5TaEGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 333ms (Views: 326.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-07-11 17:02:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aru8LAGZGP1vHk5n5TaEGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 44ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
