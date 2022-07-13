@@ -1,0 +1,73 @@
+.login-form-container {
+    display: block;
+    background-color: rgb(26, 29, 41);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.login-email-input {
+    background-color: #31343E;
+    color: #F9F9F9;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 0.25rem;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-align:left;
+    width: 350px;
+    height: 35px
+}
+
+.login-password-input {
+    background-color: #31343E;
+    color: #F9F9F9;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.25rem;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-align:left;
+    width: 350px;
+    height: 35px
+}
+
+.login-password-input:action {
+    background-color: green
+}
+
+.login-submit {
+    background-color: #0070D2;
+    border-radius: 0.25rem;   
+    margin: 30px 10px 40px 10px;
+    // padding: 10px 70px 10px 70px;
+    height: 50px;
+    width: 370px;
+    font-size: 15px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    
+}
+
+div p {
+    color: #CACACA;
+    margin-left: -200px;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+}
+
+div h2 {
+    margin-left: -130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.signup-form-link {
+    color: white;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+}

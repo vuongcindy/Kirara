@@ -1,10 +1,9 @@
 import React from "react";
-import { logout } from "../../actions/session_actions"
+import { login } from "../../actions/session_actions"
 
 class SessionForm extends React.Component {
     constructor(props) {
         super(props)
-        console.log(props)
         this.state = {
             email: '',
             password: ''
@@ -20,9 +19,8 @@ class SessionForm extends React.Component {
     }
 
     demoLogin() {
-        // e.preventDefault();
-        const demoUser = { email: 'demo@gmail.com', password: '123456'}
-        this.props.processForm(demoUser);
+        let demoUser = { email: 'demo@gmail.com', password: '123456'}
+        login(demoUser);
     }
 
     componentWillUnmount() {
@@ -31,7 +29,7 @@ class SessionForm extends React.Component {
 
     update(field) {
         return e => this.setState({
-            [field]: e.currentTarget.value
+            [field]: e.target.value
         })
     }
 
@@ -47,14 +45,13 @@ class SessionForm extends React.Component {
         );
     }
 
-
     render() {
         return (
-            <div className="login-form-container">
+            <div className="session-form-container">
                 <form onSubmit={this.handleSubmit}>
                     Welcome to Kirara!
                     {this.renderErrors()}
-                    <div className="login-form">
+                    <div className="session-form">
                         <label>Email:
                             <input type="text" value={this.state.email} onChange={this.update('email')} className="login-input"/>
                         </label>
@@ -64,6 +61,7 @@ class SessionForm extends React.Component {
                         </label>
                         <br />
                         <input className="session-submit" type="submit" value={this.props.formType}/>
+                        <br />
                         <button className="demo-login-button" onClick={this.demoLogin}>Demo Login</button>
                     </div>
                 </form>
