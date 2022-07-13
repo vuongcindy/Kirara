@@ -16,17 +16,13 @@ class SignupForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
     }
-
-    componentWillUnmount() {
-        this.props.removeErrors();
-    }
-
+    
     update(field) {
         return e => this.setState({
             [field]: e.target.value
         })
     }
-
+    
     renderErrors() {
         return (
             <ul>
@@ -37,6 +33,10 @@ class SignupForm extends React.Component {
                 ))}
             </ul>
         );
+    }
+    
+    componentWillUnmount() {
+        this.props.removeErrors();
     }
 
     render() {
@@ -54,7 +54,7 @@ class SignupForm extends React.Component {
                         <input type="text" placeholder="Password" onChange={this.update('password')} className="signup-password-input"/>
                         <br />
                         <input className="signup-submit" type="submit" value="Continue" />
-                        <p>Have an account? <Link to="/login" className="login-form-link">Login</Link></p> 
+                        <p>Have an account? <Link to="/login" className="login-form-link" onClick={this.removeErrors}>Login</Link></p> 
                     </div>
                 </form>
             </div>
