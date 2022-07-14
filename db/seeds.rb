@@ -9,5 +9,12 @@
 
 
 User.delete_all
+Profile.delete_all
 
-demoUser = User.create(email: 'demo@gmail.com', password: '123456')
+demoUser = User.create!(email: 'demo@gmail.com', password: '123456')
+
+demoProfile1 = Profile.create!(profile_name: 'taro', user_id: demoUser.id)
+
+demoProfile2 = Profile.create!(profile_name: 'ulu', user_id:  demoUser.id)
+
+demoProfile3 = Profile.create!(profile_name: 'poi', user_id:  demoUser.id)

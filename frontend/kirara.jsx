@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
 import { login, logout } from "./actions/session_actions"
+import { fetchProfiles, createProfile, updateProfile, deleteProfile } from "./util/profile_api_util"
+
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
@@ -24,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.dispatch = store.dispatch;
     window.login = login;
     window.logout = logout;
+    window.fetchProfiles = fetchProfiles;
+    window.createProfile = createProfile;
+    window.updateProfile = updateProfile;
+    window.deleteProfile = deleteProfile;
     // Testing End
     
     const root = document.getElementById('root');

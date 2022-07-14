@@ -1,29 +1,27 @@
 class Api::ProfilesController < ApplicationController
 
     def index
-        @profile = Profile.all
-        render 'api/profiles'
+        @profiles = current_user.profiles
+        # debugger
+        render :index
     end
 
     def create
         @profile = Profile.new(profile_params)
+        @profile.user_id = current_user.id
 
         if @profile.save
-            render 'api/profiles'
+            render :show
         else
             render json: @profile.errors.full_messages, status: 406
         end
-    end
-
-    def show
-        @profile = Profile.find(params[:id])
     end
 
     def update
         @profile = Profile.find(params[:id])
         
         if @profile.update(profile_params)
-            render 'api/profiles'
+            render :show
         else
             render json: @profile.errors.full_messages, status: 406
         end
@@ -31,9 +29,12 @@ class Api::ProfilesController < ApplicationController
 
     def destroy
         @profile = Profile.find(params[:id])
-
-        delete @profile
-        
+        if (@profile && current_user.profiles.length > 1)
+            @profile.delete
+            render :show
+        else
+            render json: ['Unable to delete profile']
+        end
     end
 
     private

@@ -51,7 +51,7 @@ class LoginForm extends React.Component {
                     <div className="login-form">
                         <input type="text" placeholder="Email" onChange={this.update('email')} className="login-email-input"/>
                         <br />
-                        <input type="text" placeholder="Password" onChange={this.update('password')} className="login-password-input"/>
+                        <input type="password" placeholder="Password" onChange={this.update('password')} className="login-password-input"/>
                         <br />
                         <input className="login-submit" type="submit" value="Continue" />
                         <p>New to Kirara? <Link to="/signup" className="signup-form-link">Sign Up</Link></p> 
