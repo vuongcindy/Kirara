@@ -5,6 +5,8 @@ class User < ApplicationRecord
 
     attr_reader :password
 
+    # before_validation :ensure_attached_avatar
+
     after_initialize :ensure_session_token
 
     has_many :profiles,
@@ -12,6 +14,10 @@ class User < ApplicationRecord
         foreign_key: :user_id,
         class_name: :Profile,
         dependent: :destroy
+
+    # def ensure_attached_avatar
+    #     @avatar ||= @avatar = <img src={window.cindyURL} className="cindy"/>
+    # end
 
     def self.find_by_credentials(email, password)
         @user = User.find_by(email: email)

@@ -1,0 +1,24 @@
+.header-index-container {
+    top: 0;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    // background-color: purple;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        height: 75px;
+        width: 150px;
+    }
+}
+.edit-profile-form-link {
+    border-radius: 0.25rem;
+    color: #F9F9F9;
+    background-color: #40424A;
+    padding: 15px 25px 15px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    
+}

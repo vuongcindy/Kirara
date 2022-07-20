@@ -1,12 +1,17 @@
 .splash-container {
     background-image: image-url('splash');
-    background-color: blue;
-    height: 90%;
+    // background-color: blue;
+    position: fixed;
+    height: 93%;
+    width: 100%;
 
     .splash-signup-form-link {
         background-color: #0070D2;
         border-radius: 0.25rem;   
-        margin: 330px 10px 40px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // align-content: center;
         height: 50px;
         width: 570px;
         font-size: 20px;
@@ -14,12 +19,52 @@
         text-transform: uppercase;
     }
 
+    .splash-signup-button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 40%;
+    }
+
     .demo-login-button {
         text-decoration: underline;
+        justify-content: center;
+    }
+
+    .splash-login-form-link {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        display: flex;
+        // align-content: flex-end;
+        justify-content: end;
+        // align-content: flex-end;
+        border-radius: 0.25rem;
+        padding: 18px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .splash-login-button {
+        display: flex;
+        justify-content: end;
+        position: fixed;
+        right: 2%;
+        top: 3%;
     }
 
     p {
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        top: 40%;
     }
+
+    .logo {
+        height: 75x;
+        width: 150px;
+        display: flex;
+        position: relative;
+    }
+
 }

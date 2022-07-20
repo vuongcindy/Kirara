@@ -1,9 +1,18 @@
-export const fetchProfiles = () => (
-    $.ajax({
+export const fetchProfiles = () => {
+    return $.ajax({
         method: 'GET',
         url: '/api/profiles',
     })
-);
+};
+
+export const fetchProfile = id => {
+    return $.ajax({
+        method: 'GET',
+        url: `/api/profiles/${id}`
+        // data: { profileId }
+    })
+};
+
     
 export const createProfile = profile => (
     $.ajax({
@@ -21,10 +30,10 @@ export const updateProfile = profile => (
     })
 );
 
-export const deleteProfile = profileId => (
+export const deleteProfile = id => (
     $.ajax({
         method: 'DELETE',
-        url: `/api/profiles/${profileId}`
+        url: `/api/profiles/${id}`
     })
 );
 

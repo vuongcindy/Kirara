@@ -1,5 +1,4 @@
 import React from "react";
-import NavBarContainer from "../navbar/navbar_container";
 import { Link } from "react-router-dom"
 import Footer from "../ui_blocks/footer";
 
@@ -23,8 +22,12 @@ class Splash extends React.Component {
         } else {
             return (
                 <div className="splash-container">
-                    {/* <NavBarContainer /> */}
-                    <Link to="/signup">
+                    <img src={window.logoURL} className="logo"/>
+                    <Link to="/login" className="splash-login-button">
+                        <button className="splash-login-form-link">Log In</button>
+                    </Link>
+                    <br />
+                    <Link to="/signup" className="splash-signup-button">
                         <button className="splash-signup-form-link">Get the Kirara bundle</button>
                     </Link>
                     <br />

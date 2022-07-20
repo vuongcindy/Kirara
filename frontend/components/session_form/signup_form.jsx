@@ -51,7 +51,7 @@ class SignupForm extends React.Component {
                     <div className="signup-form">
                         <input type="text" placeholder="Email" onChange={this.update('email')} className="signup-email-input"/>
                         <br />
-                        <input type="text" placeholder="Password" onChange={this.update('password')} className="signup-password-input"/>
+                        <input type="password" placeholder="Password" onChange={this.update('password')} className="signup-password-input"/>
                         <br />
                         <input className="signup-submit" type="submit" value="Continue" />
                         <p>Have an account? <Link to="/login" className="login-form-link" onClick={this.removeErrors}>Login</Link></p> 

@@ -1,0 +1,88 @@
+.home-container {
+    // background-color: green;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    // height: 1000px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .preview-container {
+        // background-color: blue;
+        position: fixed;
+        height: 40%;
+        width: 100%;
+
+        .preview-placeholder {
+            display: flex;
+            position: fixed;
+            height: 39%;
+            width: 92.5%;
+            border: 1px solid lightgray;
+            border-radius: 0.5rem;
+            // top: 10%;
+            left: 4%;
+        }
+    }
+
+    .categories-container {
+        // background-color: purple;
+        position: fixed;
+        top: 50%;
+        height: 43%;
+        width: 100%;
+        padding: 2%;
+
+        .video-placeholder1 {
+            height: 115px;
+            width: 230px;
+            border: 3px solid lightgray;
+            border-radius: 0.5rem;
+            position: fixed;
+            left: 4%;
+            top: 55%;
+            // margin: 5px;
+        }
+
+        .video-placeholder2 {
+            height: 115px;
+            width: 230px;
+            border: 3px solid lightgray;
+            border-radius: 0.5rem;
+            position: fixed;
+            left: 23%;
+            top: 55%;
+        }
+
+        .video-placeholder3 {
+            height: 115px;
+            width: 230px;
+            border: 3px solid lightgray;
+            border-radius: 0.5rem;
+            position: fixed;
+            left: 42%;
+            top: 55%;
+        }
+
+        .video-placeholder4 {
+            height: 115px;
+            width: 230px;
+            border: 3px solid lightgray;
+            border-radius: 0.5rem;
+            position: fixed;
+            left: 61%;
+            top: 55%;
+        }
+
+        .video-placeholder5 {
+            height: 115px;
+            width: 230px;
+            border: 3px solid lightgray;
+            border-radius: 0.5rem;
+            position: fixed;
+            left: 80%;
+            top: 55%;
+        }
+    }
+}

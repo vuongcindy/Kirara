@@ -9,6 +9,7 @@ class LoginForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoLogin = this.demoLogin.bind(this);
     }
 
     handleSubmit(e) {
@@ -25,6 +26,14 @@ class LoginForm extends React.Component {
         return e => this.setState({
             [field]: e.target.value
         })
+    }
+
+    demoLogin() {
+        const demoUser = {
+            email: 'demo@gmail.com',
+            password: '123456'
+        }
+        this.props.processForm(demoUser)
     }
 
     renderErrors() {
@@ -55,8 +64,14 @@ class LoginForm extends React.Component {
                         <br />
                         <input className="login-submit" type="submit" value="Continue" />
                         <p>New to Kirara? <Link to="/signup" className="signup-form-link">Sign Up</Link></p> 
+                        <br />    
                     </div>
                 </form>
+                <p className="demo">
+                    Just stopping by?
+                    &nbsp;
+                    <button className="demo-login-button" onClick={this.demoLogin}>Demo Login</button>
+                </p>
             </div>
         )
     }
