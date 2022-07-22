@@ -1,25 +1,25 @@
-# README
+# Kirara
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Kirara](https://github.com/vuongcindy/Kirara) is a Disney+ clone where users can stream movies or television shows. Users are able to sign up or log into an existing account and browse through any movies and television shows available on the platform.
 
-Things you may want to cover:
+## Technologies Utilized
++ Ruby on Rails
++ React and Redux
++ Javascript/AJAX/JBuilder
++ PostgresQL
++ HTML5 and CSS
++ AWS S3
++ Heroku
 
-* Ruby version
+## Features
++ Fully functional user auth system with error handling
+![login-screenshot](https://kirara.s3.us-west-1.amazonaws.com/login-screenshot.png)
++ Demo login for users who want to skip the sign up/login process
++ Homepage where users can view list of videos available on platform
+![home_screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+## Upcoming Features
++ Viewing video descriptions
++ Watching videos
++ Ability to add videos to watchlist
++ Search bar

@@ -14,10 +14,12 @@
     // overflow: auto;
     // overflow-y: scroll;
 
+
+
     .preview-container {
         // background-color: blue;
         // position: fixed;
-        height: 400px;
+        height: 425px;
         // width: 100%;
         display: flex;
         justify-content: center;
@@ -252,7 +254,7 @@
             position: fixed;
             height: 50px;
             width: 50px;
-            top: 2%;
+            top: 1.5%;
             right: 2%;
             border-radius: 50%;
         }

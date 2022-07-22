@@ -1,6 +1,7 @@
 import React from "react"
 // import Header from "../ui_blocks/header_home"
 import { Link } from "react-router-dom";
+import Carousel from "./carousel";
 
 class Home extends React.Component {
     constructor(props) {
@@ -64,7 +65,7 @@ class Home extends React.Component {
                 </div>
 
 
-                
+                {/* <Carousel /> */}
                 <div className="preview-container">
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg" className="preview-placeholder" onClick={this.playVideo}/>
                 </div>

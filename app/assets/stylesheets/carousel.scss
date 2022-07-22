@@ -1,0 +1,63 @@
+
+.carousel-container {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    
+    .carousel-item-container {
+        background-color: green;
+        display: block;
+
+        // flex-direction: column;
+        // justify-self: center;
+        // align-items: center;
+
+        .slick-list {
+            overflow: visible;
+        }
+
+        .thumbnail-placeholder {
+            width: 90%;
+            height: 425px;
+            margin: auto;
+            border-radius: 0.25rem;
+            border: 2px solid transparent;
+            box-shadow: 0px 10px 15px 11px rgba(0, 0, 0, 0.69);
+            // transition: 0.35s ease-in;
+            
+            &:hover {
+                border: 2px solid lightgrey;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    // ul li button {
+    //     &:before {
+    //     font-size: 10px;
+    //     color: grey;
+    //     }
+    // }
+    
+    // li.slick-active button:before {
+    //     color: white;
+    // }
+    
+    
+    
+    // button {
+    //     z-index: 5;
+    //     opacity: 0;
+    //     transition: 0.35s ease-in;
+    //     height: 100%;
+    //     width: 5vw;
+    
+    //     &:hover {
+    //     opacity: 1;
+    //     }
+    // }
+    
+    
+}
