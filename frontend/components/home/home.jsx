@@ -1,7 +1,6 @@
 import React from "react"
 // import Header from "../ui_blocks/header_home"
 import { Link } from "react-router-dom";
-// import Footer from "../ui_blocks/footer"
 
 class Home extends React.Component {
     constructor(props) {
@@ -9,17 +8,17 @@ class Home extends React.Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
-    // playVideo(e) {
-    //     e.preventDefault();
-    //     this.props.
-    // }
+    playVideo(e) {
+        e.preventDefault();
+        this.props.fetchVideo(videoId)
+    }
+
     handleClick(e) {
         e.preventDefault();
         this.props.logout()
     }
 
     render () {
-
         return (
             <div className="home-container">
                 <div className="header-container">
@@ -67,7 +66,7 @@ class Home extends React.Component {
 
                 
                 <div className="preview-container">
-                    <img src="https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg" className="preview-placeholder"/>
+                        <img src="https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg" className="preview-placeholder" onClick={this.playVideo}/>
                 </div>
                 <br />
                 <div className="categories-container">
@@ -111,20 +110,22 @@ class Home extends React.Component {
                     </label>
                     <br />
                 </div>
-                
                 <div className="footer-container">
-                        <ul>
-                            <li>LinkedIn</li>
-                            <li>AngelList</li>
-                            <li>GitHub</li>
-                            <li>Personal Website</li>
-                            <li>Another Link</li>
-                        </ul>
-                        <p className="copyright">
-                            &copy; Kirara. All Rights Reserved
-                        </p>
+                    <ul>
+                        <li>LinkedIn</li>
+                        <li>AngelList</li>
+                        <li>GitHub</li>
+                        <li>Personal Website</li>
+                        <li>Another Link</li>
+                    </ul>
+                    <br />
+                    <p className="copyright">
+                        &copy; Kirara. All Rights Reserved
+                    </p>
                 </div>
+                
             </div>
+        
         )
     }
 }

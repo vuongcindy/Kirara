@@ -4,7 +4,7 @@ import { fetchVideos, fetchVideo } from '../../actions/video_actions'
 import Home from "./home"
 
 const mapStateToProps = ( state, ownProps ) => {
-  // debugger
+  debugger
   return {
     currentUser: state.entities.users[state.session.id],
     videos: Object.values(state.entities.videos),

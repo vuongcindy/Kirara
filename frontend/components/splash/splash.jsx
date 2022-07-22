@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import Footer from "../ui_blocks/footer";
 
 class Splash extends React.Component {
     constructor(props) {
@@ -37,7 +36,18 @@ class Splash extends React.Component {
                         &nbsp;
                         <button className="demo-login-button" onClick={this.demoLogin}>Demo Login</button>
                     </p>
-                    {/* <Footer /> */}
+                    <div className="footer-container">
+                        <ul>
+                            <li>LinkedIn</li>
+                            <li>AngelList</li>
+                            <li>GitHub</li>
+                            <li>Personal Website</li>
+                            <li>Another Link</li>
+                        </ul>
+                        <p className="copyright">
+                            &copy; Kirara. All Rights Reserved
+                        </p>
+                    </div>
                 </div>
             )
         }
