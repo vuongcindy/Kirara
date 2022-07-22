@@ -15,8 +15,10 @@
 + Fully functional user auth system with error handling
 ![login-screenshot](https://kirara.s3.us-west-1.amazonaws.com/login-screenshot.png)
 + Demo login for users who want to skip the sign up/login process
++ Users can create multiple profiles, as well as edit or delete them
+![profile-screenshot](https://kirara.s3.us-west-1.amazonaws.com/profile-screenshot.png)
 + Homepage where users can view list of videos available on platform
-![home_screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
+![home-screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
 
 ## Upcoming Features
 + Viewing video descriptions
