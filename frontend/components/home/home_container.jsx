@@ -1,15 +1,21 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
+import { fetchVideos, fetchVideo } from '../../actions/video_actions'
 import Home from "./home"
 
-const mapStateToProps = ({ session, entities: { users } }) => {
+const mapStateToProps = ( state, ownProps ) => {
+  // debugger
   return {
-    currentUser: users[session.id]
+    currentUser: state.entities.users[state.session.id],
+    videos: Object.values(state.entities.videos),
+    video: state.entities.videos[ownProps.match.params.videoId]
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => dispatch(logout()),
+  fetchVideos: () => dispatch(fetchVideos()),
+  fetchVideo: (videoId) => dispatch(receiveVideo(videoId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

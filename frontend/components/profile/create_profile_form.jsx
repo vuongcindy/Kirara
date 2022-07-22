@@ -5,7 +5,7 @@ class CreateProfileForm extends React.Component {
     constructor(props) {
         super(props);
         // console.log(props)
-        this.state = this.props.profile;
+        // this.state = this.props.profile;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleAvatarClick = this.handleAvatarClick.bind(this);
     }
@@ -35,16 +35,16 @@ class CreateProfileForm extends React.Component {
         return (
             <div className="create-profile-form-container">
                 <h1>Add Profile</h1>
-                {/* <br />
-                <img src={this.state.avatar ? this.state.avatar : window.cindyURL} className="avatar"/> */}
                 <br />
+                {/* <img src={this.state.avatar ? this.state.avatar : window.cindyURL} className="avatar"/> */} 
+                {/* <br />
                 <div className="avatar-container">
                     <img src="https://kirara.s3.us-west-1.amazonaws.com/lightsaber_boy.jpg" onClick={ (e) => this.handleAvatarClick(e) } alt="lightsaber-boy-avatar" />
                 </div>
                 <div className="avatar-container">
                     <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" 
                     onClick={ (e) => this.handleAvatarClick(e) } alt="chubby-smile-avatar" />
-                </div>
+                </div> */}
                 <form onSubmit={this.handleSubmit}>
                 <input type="text" placeholder="Profile Name" onChange={this.update('profile_name')} className="create-profile-input"/> 
                 <br />

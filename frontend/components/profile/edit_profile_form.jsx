@@ -5,14 +5,27 @@ import HeaderProfileEdit from "../ui_blocks/header_profile_edit";
 class EditProfileForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.profile;
+        this.state = {
+            profile_name: ''
+        };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDeleteClick = this.handleDeleteClick.bind(this);
     }
 
     componentDidMount() {
         // console.log("o", this.props);
-        this.props.fetchProfile(this.props.profileId)
+        this.props.fetchProfiles()
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.profile) {
+            if (prevProps.profile !== this.props.profile) {
+                this.setState({
+                    profile_name: this.props.profile.profile_name,
+                    id: this.props.profile.id
+                })
+            }
+        }
     }
 
     handleSubmit(e) {
@@ -26,9 +39,11 @@ class EditProfileForm extends React.Component {
 
     handleDeleteClick(e) {
         e.preventDefault();
-        // console.log(this.props)
-        this.props.deleteProfile(this.props.profile.id);
-        this.props.history.push("/select-profile")
+        console.log("props", this.props.profileId)
+        this.props.deleteProfile(this.props.profileId)
+            .then(() =>
+                this.props.history.push("/select-profile")
+            )
     }
 
     update(field) {
@@ -38,7 +53,14 @@ class EditProfileForm extends React.Component {
     }
     
     render() {
-        // console.log("props", this.props);
+        // debugger
+        // if (!this.props.profile) return null;
+        // this.setState({
+        //     profile_name: this.props.profile.profile_name,
+        //     user_id: this.props.profile.user_id,
+        //     id: this.props.profile.id
+        // })
+        // console.log("props", this.props.profile);
         return (
             <div className="edit-profile-form-container">
                 {/* <HeaderProfileEdit /> */}
@@ -46,7 +68,7 @@ class EditProfileForm extends React.Component {
                 <div className="profile-form-container">
                 <h1>Edit Profile</h1>
                 <br />
-                    <form onSubmit={(e) => this.handleSubmit(e)}> 
+                    <form onSubmit={this.handleSubmit}> 
                     <div className="edit-profile-form">
                         <div className="edit-form-text">
                             <input type="text" value={this.state.profile_name} onChange={this.update('profile_name')} className="edit-profile-input"/> 
@@ -59,10 +81,7 @@ class EditProfileForm extends React.Component {
                     </div> 
                     </form>
                     <br />
-                    <Link to="/select-profile">
-                        <button className="delete-profile-button" onClick={ (e) => this.handleDeleteClick(e) }>Delete Profile</button>
-                    </Link>
-                    
+                    <button className="delete-profile-button" onClick={this.handleDeleteClick}>Delete Profile</button>
                 </div>
             </div>
         )

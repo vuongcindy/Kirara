@@ -1,11 +1,13 @@
 import { combineReducers } from "redux";
 import usersReducer from "./users_reducer";
 import profileReducer from "./profiles_reducer"
+import videoReducer from "./videos_reducer";
 
 const entitiesReducer = combineReducers({
 
     users: usersReducer,
-    profiles: profileReducer
+    profiles: profileReducer,
+    videos: videoReducer
     
 });
 

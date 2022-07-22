@@ -17,6 +17,7 @@ class Splash extends React.Component {
     }
 
     render() {
+        // debugger
         if (!this.props) { 
             return null;
         } else {
@@ -36,7 +37,7 @@ class Splash extends React.Component {
                         &nbsp;
                         <button className="demo-login-button" onClick={this.demoLogin}>Demo Login</button>
                     </p>
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
             )
         }

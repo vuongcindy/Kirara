@@ -1,13 +1,14 @@
 import { connect } from "react-redux";
-import { fetchProfile, updateProfile, deleteProfile } from "../../actions/profile_actions";
+import { fetchProfile, updateProfile, deleteProfile,fetchProfiles } from "../../actions/profile_actions";
 import EditProfileForm from "./edit_profile_form"
 
 const mapStateToProps = ( state, ownProps ) => {
-    console.log(state.entities.profiles[ownProps])
+    // console.log(state.entities.profiles[profile])
+    // debugger
     return {
         profile: state.entities.profiles[ownProps.match.params.id],
         profileId: ownProps.match.params.id,
-        formType: 'Update Profile'
+        formType: 'Update Profile' 
     }
 }
 
@@ -15,7 +16,8 @@ const mapDispatchToProps = dispatch => {
     return {
         processForm: (profile) => dispatch(updateProfile(profile)),
         fetchProfile: (profileId) => dispatch(fetchProfile(profileId)),
-        deleteProfile: (profileId) => dispatch(deleteProfile(profileId))
+        deleteProfile: (profileId) => dispatch(deleteProfile(profileId)),
+        fetchProfiles: () => dispatch(fetchProfiles())
     }
 }
 
