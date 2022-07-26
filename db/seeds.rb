@@ -8,10 +8,12 @@
 
 require 'open-uri'
 
-
 User.delete_all
 Profile.delete_all
-Video.delete_all
+# Video.delete_all
+
+ActiveRecord::Base.connection.reset_pk_sequence!('users')
+ActiveRecord::Base.connection.reset_pk_sequence!('profiles')
 
 demoUser = User.create!(email: 'demo@gmail.com', password: '123456')
 
