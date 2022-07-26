@@ -38,11 +38,10 @@ class Splash extends React.Component {
                     </p>
                     <div className="footer-container">
                         <ul>
-                            <li>LinkedIn</li>
-                            <li>AngelList</li>
-                            <li>GitHub</li>
-                            <li>Personal Website</li>
-                            <li>Another Link</li>
+                            <Link to="https://www.linkedin.com/in/vuongcindy/"><li>LinkedIn</li></Link>
+                            <Link to="https://angel.co/u/cindy-vuong-3"><li>AngelList</li></Link>
+                            <Link to="https://github.com/vuongcindy"><li>GitHub</li></Link>
+                            <Link to="https://github.com/vuongcindy/Kirara"><li>Project Repo</li></Link>
                         </ul>
                         <p className="copyright">
                             &copy; Kirara. All Rights Reserved

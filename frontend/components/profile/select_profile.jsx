@@ -21,7 +21,7 @@ class Profiles extends React.Component {
                         return (
                             <li key={profile.id}>
                                 <Link to="/home">
-                                    <img src={profile.avatar} className="avatar"/>
+                                    <img src="https://kirara.s3.us-west-1.amazonaws.com/lightsaber_boy.jpg" className="avatar"/>
                                     {profile.profile_name}
                                 </Link>
                             </li>

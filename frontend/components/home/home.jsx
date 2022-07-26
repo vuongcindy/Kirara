@@ -59,7 +59,7 @@ class Home extends React.Component {
                     <button className="session-end" onClick={this.handleClick}>Logout</button>
                     <Link to="/edit-profiles">
                         <button>
-                            <img src={window.cindyURL} className="edit-profile-button"/>
+                            <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
                         </button>
                     </Link>
                 </div>
