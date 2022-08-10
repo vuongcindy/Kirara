@@ -30,6 +30,7 @@ class EditProfiles extends React.Component {
                                     <img src={profile.avatar} className="avatar"/>
                                     {profile.profile_name}
                                 </Link>
+                                
                                 {/* <button onClick={this.handleProfileClick}> */}
                                 
                                 {/* </button> */}
