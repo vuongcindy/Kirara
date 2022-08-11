@@ -55,6 +55,8 @@
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 .video-description-content {
@@ -69,16 +71,22 @@
     padding-top: 50px;
 
     .video-title {
-        background: url("https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg");
-        background-color: aquamarine;
-        background-size: 400px 200px;
-        object-fit: fill;
-        background-repeat: no-repeat;
+        // background: url("https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg");
+        // background-color: aquamarine;
+        // background-size: 400px 200px;
+        // object-fit: fill;
+        // background-repeat: no-repeat;
         margin-left: 5%;
         margin-right: 5%;
-        width: 400px;
+        // width: 400px;
+        // height: 200px;
+        // margin-bottom: 10px;
+    }
+    
+    .video-description-icon {
         height: 200px;
-        margin-bottom: 10px;
+        width: 350px;
+        border-radius: 0.5rem;
     }
 
     .video-metadata {

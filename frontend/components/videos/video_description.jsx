@@ -76,7 +76,7 @@ class VideoDescription extends React.Component {
 
                 <div className="video-description-content">
                     <div className="video-title">
-                        {this.props.video.title} <br />
+                        <img src={this.props.video.thumbnailUrl} className="video-description-icon"/> <br />
                     </div>
                 <div className="video-metadata">
                     {this.props.video.year}
@@ -92,7 +92,7 @@ class VideoDescription extends React.Component {
                         <h3>Play</h3>
                     </button>
                     <video
-                    src="https://kirara.s3.us-west-1.amazonaws.com/mirai-video.mp4"
+                    src={this.props.video.videoUrl}
                     controls
                     width='500px'
                     height='500px'

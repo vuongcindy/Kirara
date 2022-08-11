@@ -108,7 +108,11 @@ class Home extends React.Component {
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/cowboy-bebop-thumbnail.jpeg" className="thumbnail-placeholder"/>
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/arcane-league-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/2">
+                            <button>
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/arcane-league-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </button>
+                            </Link>
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/naruto-thumbnail.jpeg" className="thumbnail-placeholder"/>
                         </div>
                     </label>
