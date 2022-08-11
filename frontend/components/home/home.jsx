@@ -6,17 +6,18 @@ import Carousel from "./carousel";
 class Home extends React.Component {
     constructor(props) {
         super(props)
-        this.handleClick = this.handleClick.bind(this)
+        this.handleLogoutClick = this.handleLogoutClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    playVideo(e) {
+    handleLogoutClick(e) {
         e.preventDefault();
-        this.props.fetchVideo(videoId)
+        this.props.logout()
     }
 
     handleClick(e) {
         e.preventDefault();
-        this.props.logout()
+        this.props.history.push("/movies/1")
     }
 
     render () {
@@ -56,7 +57,7 @@ class Home extends React.Component {
                             <span>Series</span>
                         </button>
                     </div>
-                    <button className="session-end" onClick={this.handleClick}>Logout</button>
+                    <button className="session-end" onClick={this.handleLogoutClick}>Logout</button>
                     <Link to="/edit-profiles">
                         <button>
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
@@ -67,7 +68,9 @@ class Home extends React.Component {
 
                 {/* <Carousel /> */}
                 <div className="preview-container">
-                        <img src="https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg" className="preview-placeholder" onClick={this.playVideo}/>
+                    <button onClick={this.handleClick}>
+                        <img src="https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg" className="preview-placeholder"/>
+                    </button>
                 </div>
                 <br />
                 <div className="categories-container">

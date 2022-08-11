@@ -1,0 +1,180 @@
+.header-container {
+    // background-color: #0e0b14;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    .logo {
+        height: 75px;
+        width: 150px;
+    }
+
+    .edit-profile-button {
+        display: flex;
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        top: 1.5%;
+        right: 2%;
+        border-radius: 50%;
+    }
+    .session-end {
+        display: flex;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+    }
+
+    .button-container {
+        // background-color: #40424A;
+        position: fixed;
+        width: 55%;
+        left: 12%;
+        top: 4%;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            // background-color: purple;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.video-description-content {
+    margin-top: 75px;
+    height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(26, 29, 41, 1)),
+    url('https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg');
+    // background-color: rgba(26, 29, 41, 1);
+    // background-image: linear-gradient(
+    // to bottom, transparent, rgba(26, 29, 41, 1)
+    // ), url("https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg");
+    background-repeat: no-repeat;
+    // background-image: -webkit-linear-gradient(url('https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg'), rgba(0, 0, 0, 0.3), rgba(26, 29, 41, 1));
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
+    .video-title {
+        background: url("https://kirara.s3.us-west-1.amazonaws.com/mirai-thumbnail.jpeg");
+        background-color: aquamarine;
+        background-size: 400px 200px;
+        object-fit: fill;
+        background-repeat: no-repeat;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 400px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .video-metadata {
+        // background-color: orange;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        line-height: 2.5;
+    }
+    
+    .video-genre {
+        // background-color: pink;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 20%;
+        text-align: left;
+    }
+
+    .video-buttons {
+        // background-color: purple;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .play-button {
+        background-color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: rgb(26, 29, 41);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 75px;
+        padding: 0px 30px 0 30px;
+        border-radius: 0.25rem;
+        border: 1px white solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;  
+
+        h3 {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+    }
+
+    .play-logo-button {
+        font-size: 18px;
+        border-radius: 2px;
+    }
+
+    .video-description {
+        // background-color: green;
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 2;
+        text-align: left;
+    }
+
+    .hidden {
+        // z-index: 9000;
+        display: none;
+    }
+}
+
+.footer-container {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 7%;
+    font-size: 12px;
+    color: #CACACA;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    display: block;
+
+    li {
+        display: inline-flex;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .copyright {
+        margin: auto;
+    }
+
+
+}
