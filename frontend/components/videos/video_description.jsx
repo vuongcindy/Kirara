@@ -29,7 +29,7 @@ class VideoDescription extends React.Component {
         if (!this.props.video) {return null}
         // console.log(this.props.video.title)
         return (
-            <div className="video-description-container">
+            <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
                 <div className="header-container">
                 <img src={window.logoURL} className="logo"/>
                     <div className="button-container">
@@ -132,7 +132,9 @@ export default VideoDescription;
 document.addEventListener('fullscreenchange', (e) => {
     const currentVideo = document.getElementById('currentVideo');
     if (!document.fullscreenElement) {
-      document.exitFullscreen().catch(() => currentVideo.pause());
-      currentVideo.classList.add('hidden');
+      document.exitFullscreen()
+        .catch(() => currentVideo.pause());
+      currentVideo.classList
+        .add('hidden');
     }
   });

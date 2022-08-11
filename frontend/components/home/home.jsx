@@ -17,7 +17,7 @@ class Home extends React.Component {
 
     handleClick(e) {
         e.preventDefault();
-        this.props.history.push("/movies/1")
+        this.props.history.push("/videos/1")
     }
 
     render () {
