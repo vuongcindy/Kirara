@@ -14,8 +14,6 @@
     // overflow: auto;
     // overflow-y: scroll;
 
-
-
     .preview-container {
         // background-color: blue;
         // position: fixed;
@@ -291,35 +289,6 @@
         }
 
         
-    }
-    .footer-container {
-        background-color: black;
-        // padding: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        // bottom: 0;
-        width: 98.8%;
-        height: 7%;
-        // position: fixed;
-        font-size: 12px;
-        color: #CACACA;
-        font-weight: lighter;
-        font-family: Helvetica, sans-serif;
-        display: block;
-
-        ul {
-            // margin-top: 10px;
-        }
-
-        li {
-            display: inline-flex;
-            // justify-content: space-between;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    
-        .copyright {
-            margin: auto;
-        }
     }
     
 }

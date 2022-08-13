@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../ui_blocks/footer";
 
 class Search extends React.Component {
     constructor(props) {
@@ -66,7 +67,7 @@ class Search extends React.Component {
                     </form>
                 </div>
 
-                
+                <Footer />
             </div>
         )
     }

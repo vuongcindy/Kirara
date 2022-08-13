@@ -128,18 +128,6 @@ class Home extends React.Component {
                     </label>
                     <br />
                 </div>
-                {/* <div className="footer-container">
-                    <ul>
-                        <li>LinkedIn</li>
-                        <li>AngelList</li>
-                        <li>GitHub</li>
-                        <li>Personal Website</li>
-                    </ul>
-                    <br />
-                    <p className="copyright">
-                        &copy; Kirara. All Rights Reserved
-                    </p>
-                </div> */}
                 <Footer />
             </div>
         )
