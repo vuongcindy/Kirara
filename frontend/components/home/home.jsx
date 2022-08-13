@@ -1,7 +1,8 @@
 import React from "react"
-// import Header from "../ui_blocks/header_home"
+// import HeaderHome from "../ui_blocks/header_home"
 import { Link } from "react-router-dom";
 import Carousel from "./carousel";
+import Footer from "../ui_blocks/footer";
 
 class Home extends React.Component {
     constructor(props) {
@@ -21,6 +22,7 @@ class Home extends React.Component {
     }
 
     render () {
+        console.log("this.props", this.props)
         return (
             <div className="home-container">
                 <div className="header-container">
@@ -29,12 +31,16 @@ class Home extends React.Component {
                         <button>
                             <i className="fa fa-home" id="home-logo-button" ></i> 
                             &nbsp; 
-                            <span>Home</span>
+                            <Link to="/home">
+                                <span>Home</span>
+                            </Link>
                         </button>
                         <button>
                             <i className="fa fa-search" id="search-logo-button" ></i> 
                             &nbsp; 
-                            <span>Search</span>
+                            <Link to="/search">
+                                <span>Search</span>
+                            </Link>
                         </button>
                         <button>
                             <i className="fa fa-plus" id="plus-logo-button" ></i> 
@@ -64,7 +70,7 @@ class Home extends React.Component {
                         </button>
                     </Link>
                 </div>
-
+                {/* <HeaderHome /> */}
 
                 {/* <Carousel /> */}
                 <div className="preview-container">
@@ -113,27 +119,29 @@ class Home extends React.Component {
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/arcane-league-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </button>
                             </Link>
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/naruto-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/3">
+                                <button>
+                                    <img src="https://kirara.s3.us-west-1.amazonaws.com/boruto-thumbnail.png" className="thumbnail-placeholder"/>
+                                </button>
+                            </Link>
                         </div>
                     </label>
                     <br />
                 </div>
-                <div className="footer-container">
+                {/* <div className="footer-container">
                     <ul>
                         <li>LinkedIn</li>
                         <li>AngelList</li>
                         <li>GitHub</li>
                         <li>Personal Website</li>
-                        <li>Another Link</li>
                     </ul>
                     <br />
                     <p className="copyright">
                         &copy; Kirara. All Rights Reserved
                     </p>
-                </div>
-                
+                </div> */}
+                <Footer />
             </div>
-        
         )
     }
 }

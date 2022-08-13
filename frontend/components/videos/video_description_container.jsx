@@ -10,6 +10,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        logout: () => dispatch(logout()),
         fetchVideo: videoId => dispatch(fetchVideo(videoId))
     }
 }

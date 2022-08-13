@@ -1,0 +1,32 @@
+.search-content {
+    // background-color: green;
+    margin-top: 75px;
+    height: 85vh;
+}
+
+.search-form-container {
+    background-color: rgb(75, 78, 90);
+    // background-image: 
+    // linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(26, 29, 41, 0.7));
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    color: rgb(168, 169, 173);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    // align-content: center;
+
+}
+
+.search-input {
+    font-size: 50px;
+    letter-spacing: 1px;
+    // background-color: green;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+// .search-input:active {
+//     color: rgb(203, 204, 206)
+// }

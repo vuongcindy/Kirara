@@ -13,8 +13,7 @@ class EditProfileForm extends React.Component {
     }
 
     componentDidMount() {
-        // console.log("o", this.props);
-        this.props.fetchProfiles()
+        this.props.fetchProfiles();
     }
 
     componentDidUpdate(prevProps) {
@@ -30,7 +29,6 @@ class EditProfileForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // const currentProfile = Object.assign({}, this.state);
         this.props.processForm(this.state)
             .then(() =>
                 this.props.history.push("/select-profile")

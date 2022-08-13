@@ -5,6 +5,7 @@ class VideoDescription extends React.Component {
     constructor(props) {
         super(props)
         this.handleClick = this.handleClick.bind(this);
+        this.handleLogoutClick = this.handleLogoutClick.bind(this);
     }
 
     handleLogoutClick(e) {

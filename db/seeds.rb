@@ -63,6 +63,25 @@ arcane.background.attach(io: arcane_bg, filename:'arcane-bg.jpg')
 arcane_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/arcane-legend.mp4')
 arcane.video.attach(io: arcane_video, filename: 'arcane-legend.mp4')
 
+# boruto
+boruto = Video.create!(
+    title: "Boruto", 
+    description:"Opening with a teenaged Boruto Uzumaki facing a foe named Kawaki during the destruction of his village, the manga follows with a retelling of events in Boruto: Naruto the Movie with added content.[2] The son of the Seventh Hokage Naruto Uzumaki, Boruto feels angry over his father placing the village before his family. At that time, Boruto becomes a member of a ninja team led by Naruto's protégé Konohamaru Sarutobi, alongside Sarada Uchiha, the daughter of Sasuke and Sakura Uchiha, and Mitsuki, Orochimaru's artificial son. Sasuke returns to the village to warn Naruto of an impending threat relating to deduce the motivations of Kaguya Ōtsutsuki. Boruto asks Sasuke to train him for the upcoming Chunin exam to impress his father.", 
+    studio: "Netflix", 
+    genre: "Action", 
+    year: 2016, 
+    runtime: 0, 
+    video_type: "series"
+)
+boruto_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/boruto-thumbnail.png')
+boruto.thumbnail.attach(io: boruto_thumbnail, filename: 'https://kirara.s3.us-west-1.amazonaws.com/boruto-thumbnail.png')
+
+boruto_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/boruto-bg.jpg')
+boruto.background.attach(io: boruto_bg, filename:'boruto-bg.jpg')
+
+boruto_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/boruto.mp4')
+boruto.video.attach(io: boruto_video, filename: 'boruto.mp4')
+
 # brother bear
 # brother_bear = Video.create!(
 #     title: "Brother Bear", 

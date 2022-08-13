@@ -10,6 +10,8 @@ import EditProfileContainer from "./profile/edit_profiles_container";
 import EditProfileFormContainer from "./profile/edit_profile_form_container";
 import CreateProfileFormContainer from "./profile/create_profile_form_container";
 import VideoDescriptionContainer from "./videos/video_description_container";
+import SearchContainer from "./search/search_container";
+
 
 const App = () => (
     <div className="app-container">
@@ -21,6 +23,7 @@ const App = () => (
             <ProtectedRoute path="/edit-profiles/:id" component={EditProfileFormContainer} />
             <ProtectedRoute exact path="/edit-profiles" component={EditProfileContainer} />
             <ProtectedRoute exact path="/home" component={HomeContainer} />
+            <ProtectedRoute exact path="/search" component={SearchContainer} />
             <ProtectedRoute path="/videos/:id" component={VideoDescriptionContainer} />
             <AuthRoute exact path="/" component={SplashContainer} />
         </Switch>
