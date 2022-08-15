@@ -6,6 +6,7 @@ class Watchlist extends React.Component {
     }
 
     render() {
+        console.log("this.props", this.props)
         return (
             <div className="watchlist-container">
                 watchlist div
@@ -13,3 +14,5 @@ class Watchlist extends React.Component {
         )
     }
 }
+
+export default Watchlist;
