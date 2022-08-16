@@ -24,7 +24,7 @@ const App = () => (
             <ProtectedRoute path="/edit-profiles/:id" component={EditProfileFormContainer} />
             <ProtectedRoute exact path="/edit-profiles" component={EditProfileContainer} />
             <ProtectedRoute exact path="/home" component={HomeContainer} />
-            <ProtectedRoute exact path="/search" component={SearchContainer} />
+            <ProtectedRoute path="/search" component={SearchContainer} />
             <ProtectedRoute path="/watchlist" component={WatchlistContainer} />
             <ProtectedRoute path="/videos/:id" component={VideoDescriptionContainer} />
             <AuthRoute exact path="/" component={SplashContainer} />
