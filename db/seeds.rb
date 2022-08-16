@@ -119,3 +119,22 @@ kiki.background.attach(io: kiki_bg, filename:'kiki-bg.jpg')
 
 kiki_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/kiki.mp4')
 kiki.video.attach(io: kiki_video, filename: 'kiki.mp4')
+
+# princess mononoke
+princess_mononoke = Video.create!(
+    title: "Princess Mononoke", 
+    description:"In the 14th century, the harmony that humans, animals and gods have enjoyed begins to crumble. The protagonist, young Ashitaka - infected by an animal attack, seeks a cure from the deer-like god Shishigami. In his travels, he sees humans ravaging the earth, bringing down the wrath of wolf god Moro and his human companion Princess Mononoke. Hiskattempts to broker peace between her and the humans brings only conflict.", 
+    studio: "Studio Ghibli", 
+    genre: "Romance", 
+    year: 1997, 
+    runtime: 7980, 
+    video_type: "movie"
+)
+princess_mononoke_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke-thumbnail.jpeg')
+princess_mononoke.thumbnail.attach(io: princess_mononoke_thumbnail, filename: 'princess-mononoke-thumbnail.jpeg')
+
+princess_mononoke_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke-bg.jpg')
+princess_mononoke.background.attach(io: princess_mononoke_bg, filename:'princess-mononoke-bg.jpg')
+
+princess_mononoke_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke.mp4')
+kiki.video.attach(io: princess_mononoke_video, filename: 'princess-mononoke.mp4')

@@ -105,6 +105,7 @@ class Search extends React.Component {
               <input placeholder="Search by title" onChange={this.handleUpdate} value={this.state.searchStr} className="search-input"/>
               {/* <button onClick={this.handleSearch}>hi</button> */}
             </div>
+
             <div className="search-result-container">
               {this.state.results.map((video) => {
                 return (
