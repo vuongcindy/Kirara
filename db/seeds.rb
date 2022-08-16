@@ -100,3 +100,22 @@ brother_bear.background.attach(io: brother_bear_bg, filename:'brother-bear-bg.jp
 
 brother_bear_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother-bear.mp4')
 brother_bear.video.attach(io: brother_bear_video, filename: 'brother-bear.mp4')
+
+# kiki's delivery service
+kiki = Video.create!(
+    title: "Kiki's Delivery Service", 
+    description:"In this anime feature, 13-year-old Kiki moves to a seaside town with her talking cat, Jiji, to spend a year alone, in accordance with her village's tradition for witches in training. After learning to control her broomstick, Kiki sets up a flying courier service and soon becomes a fixture in the community. But when the insecure young witch begins questioning herself and loses her magic abilities, she must overcome her self-doubt to get her powers back.", 
+    studio: "Studio Ghibli", 
+    genre: "Adventure", 
+    year: 1989, 
+    runtime: 6120, 
+    video_type: "movie"
+)
+kiki_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/kiki-thumbnail.jpeg')
+kiki.thumbnail.attach(io: kiki_thumbnail, filename: 'kiki-thumbnail.jpeg')
+
+kiki_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/kiki-bg.jpg')
+kiki.background.attach(io: kiki_bg, filename:'kiki-bg.jpg')
+
+kiki_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/kiki.mp4')
+kiki.video.attach(io: kiki_video, filename: 'kiki.mp4')
