@@ -29,7 +29,6 @@ const App = () => (
             <ProtectedRoute path="/videos/:id" component={VideoDescriptionContainer} />
             <AuthRoute exact path="/" component={SplashContainer} />
         </Switch>
-
     </div>
 );
 

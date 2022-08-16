@@ -83,20 +83,20 @@ boruto_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/boruto.mp4')
 boruto.video.attach(io: boruto_video, filename: 'boruto.mp4')
 
 # brother bear
-# brother_bear = Video.create!(
-#     title: "Brother Bear", 
-#     description:"", 
-#     studio: "Studio Chizu", 
-#     genre: "Adventure", 
-#     year: 2018, 
-#     runtime:5880, 
-#     video_type: "movie"
-# )
-# brother_bear_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother_bear-thumbnail.jpeg')
-# brother_bear.thumbnail.attach(io: brother_bear_thumbnail, filename: 'brother_bear-thumbnail.jpeg')
+brother_bear = Video.create!(
+    title: "Brother Bear", 
+    description:"Kenai is a young Indian brave with a particular distaste for bears. When his brother Sitka is killed by one, Kenai in turn kills the bear, only to be magically transformed into one himself. To make matters worse, his other brother Denahi vows to kill the bear Kenai has become. Kenai's only hope is a magical mountain where he believes he can be changed back to a human, and he enlists a real bear cub, Koda, to get him there.", 
+    studio: "Disney", 
+    genre: "Adventure", 
+    year: 2003, 
+    runtime:5100, 
+    video_type: "movie"
+)
+brother_bear_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother-bear-thumbnail.jpeg')
+brother_bear.thumbnail.attach(io: brother_bear_thumbnail, filename: 'brother-bear-thumbnail.jpeg')
 
-# brother_bear_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother_bear-bg.jpg')
-# brother_bear.background.attach(io: brother_bear_bg, filename:'brother_bear-bg.jpg')
+brother_bear_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother-bear-bg.jpg')
+brother_bear.background.attach(io: brother_bear_bg, filename:'brother-bear-bg.jpg')
 
-# brother_bear_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother-bear.mp4')
-# brother_bear.video.attach(io: brother_bear_video, filename: 'brother_bear.mp4')
+brother_bear_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/brother-bear.mp4')
+brother_bear.video.attach(io: brother_bear_video, filename: 'brother-bear.mp4')
