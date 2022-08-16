@@ -94,7 +94,9 @@ class Home extends React.Component {
                             <Link to="/videos/4">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/brother-bear-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/raya-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/7">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/raya-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
                             <Link to="/videos/5">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/kiki-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>

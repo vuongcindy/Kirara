@@ -137,7 +137,7 @@ princess_mononoke_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/princ
 princess_mononoke.background.attach(io: princess_mononoke_bg, filename:'princess-mononoke-bg.jpg')
 
 princess_mononoke_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke.mp4')
-kiki.video.attach(io: princess_mononoke_video, filename: 'princess-mononoke.mp4')
+princess_mononoke.video.attach(io: princess_mononoke_video, filename: 'princess-mononoke.mp4')
 
 # 7 raya
 raya = Video.create!(
@@ -156,4 +156,23 @@ raya_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/raya-bg.jpg')
 raya.background.attach(io: raya_bg, filename:'raya-bg.jpg')
 
 raya_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/raya.mp4')
-kiki.video.attach(io: raya_video, filename: 'raya.mp4')
+raya.video.attach(io: raya_video, filename: 'raya.mp4')
+
+# 8 tarzan
+tarzan = Video.create!(
+    title: "Tarzan", 
+    description:"the orphaned Tarzan grows up in the remote African wilderness, raised by the gentle gorilla Kala. When a British expedition enters the jungle, Tarzan encounters the beautiful Jane and recognizes that, like her, he's human. Falling in love with Jane, Tarzan is torn between embracing civilization and staying with his gorilla family, which becomes threatened by the ruthless hunter Clayton.", 
+    studio: "Disney", 
+    genre: "Romance", 
+    year: 1999, 
+    runtime: 5280, 
+    video_type: "movie"
+)
+tarzan_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/tarzan-thumbnail.jpeg')
+tarzan.thumbnail.attach(io: tarzan_thumbnail, filename: 'tarzan-thumbnail.jpeg')
+
+tarzan_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/tarzan-bg.jpg')
+tarzan.background.attach(io: tarzan_bg, filename:'tarzan-bg.jpg')
+
+tarzan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/tarzan.mp4')
+tarzan.video.attach(io: tarzan_video, filename: 'tarzan.mp4')
