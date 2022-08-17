@@ -176,3 +176,26 @@ tarzan.background.attach(io: tarzan_bg, filename:'tarzan-bg.jpg')
 
 tarzan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/tarzan.mp4')
 tarzan.video.attach(io: tarzan_video, filename: 'tarzan.mp4')
+
+# 9 love is blind: japan
+love_is_blind_japan = Video.create!(
+    title: "Love is Blind: Japan", 
+    description:"Love is Blind is Netflix's American unscripted series where singles who want to be loved for who they are, rather than what they look like, have signed up for a less conventional approach to modern dating where they hope to meet the person they want to spend the rest of their lives with…without ever having seen them…
+
+    With no distractions from the outside world, the singles talk to a stream of potential love interests and when back in the real world, as the couples plan towards their wedding day, they will quickly discover whether they can turn their emotional connection into a true love before the fast-approaching ceremony.
+    
+    Takashi Fujii and Yuka Itaya will be navigators for Love is Blind: Japan and see how the social experiment goes on.", 
+    studio: "Netflix", 
+    genre: "Romance", 
+    year: 2022, 
+    runtime: 36180, 
+    video_type: "series"
+)
+love_is_blind_japan_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan-thumbnail.jpeg')
+love_is_blind_japan.thumbnail.attach(io: love_is_blind_japan_thumbnail, filename: 'love-is-blind-japan-thumbnail.jpeg')
+
+love_is_blind_japan_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan-bg.jpg')
+love_is_blind_japan.background.attach(io: love_is_blind_japan_bg, filename:'love-is-blind-japan-bg.jpg')
+
+love_is_blind_japan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan.mp4')
+love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-is-blind-japan.mp4')

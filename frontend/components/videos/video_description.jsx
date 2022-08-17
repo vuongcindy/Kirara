@@ -6,6 +6,7 @@ class VideoDescription extends React.Component {
         super(props)
         this.handleClick = this.handleClick.bind(this);
         this.handleLogoutClick = this.handleLogoutClick.bind(this);
+        this.runtimeConversion = this.runtimeConversion.bind(this);
     }
 
     handleLogoutClick(e) {
@@ -24,6 +25,15 @@ class VideoDescription extends React.Component {
 
     componentDidMount() {
         this.props.fetchVideo(this.props.match.params.id)
+    }
+
+    runtimeConversion(s) {
+        var h = Math.floor(s / 3600);
+        var m = Math.floor(s % 3600 / 60);
+    
+        var hDisplay = h > 0 ? h + (h == 1 ? "h " : "h ") : "";
+        var mDisplay = m > 0 ? m + (m == 1 ? "m" : "m") : "";
+        return hDisplay + mDisplay; 
     }
 
     render() {
@@ -82,7 +92,7 @@ class VideoDescription extends React.Component {
                 <div className="video-metadata">
                     {this.props.video.year}
                     &nbsp; • &nbsp;
-                    {this.props.video.runtime} <br />
+                    {this.runtimeConversion(this.props.video.runtime)} <br />
                 </div>
                 <div className="video-genre">
                     {this.props.video.genre} 
@@ -92,6 +102,9 @@ class VideoDescription extends React.Component {
                         <i className="fa fa-play fa-1x" id="play-logo-button" ></i> 
                         <h3>Play</h3>
                     </button>
+                    {/* <button> */}
+                        <i className="fa fa-plus" id="add-watchlist-item-button"></i>
+                    {/* </button> */}
                     <video
                     src={this.props.video.videoUrl}
                     controls

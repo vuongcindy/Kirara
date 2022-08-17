@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_20_211613) do
+ActiveRecord::Schema.define(version: 2022_08_16_232718) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,13 @@ ActiveRecord::Schema.define(version: 2022_07_20_211613) do
     t.index ["studio"], name: "index_videos_on_studio"
     t.index ["title"], name: "index_videos_on_title"
     t.index ["video_type"], name: "index_videos_on_video_type"
+  end
+
+  create_table "watchlist_items", force: :cascade do |t|
+    t.integer "profile_id"
+    t.integer "video_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

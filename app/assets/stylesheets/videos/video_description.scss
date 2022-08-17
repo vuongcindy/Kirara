@@ -25,7 +25,7 @@
     .session-end {
         display: flex;
         position: fixed;
-        top: 4%;
+        top: 2%;
         right: 7%;
     }
 
@@ -34,7 +34,7 @@
         position: fixed;
         width: 55%;
         left: 12%;
-        top: 4%;
+        top: 2%;
         display: flex;
         justify-content: space-between;
 
@@ -113,8 +113,13 @@
 
     .video-buttons {
         // background-color: purple;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 20px;
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        margin-left: 5%;
+        align-items: center;
     }
 
     .play-button {
@@ -124,16 +129,20 @@
         text-transform: uppercase;
         letter-spacing: 1.5px;
         color: rgb(26, 29, 41);
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 75px;
-        padding: 0px 30px 0 30px;
+        // margin-left: 5%;
+        // margin-right: 5%;
+        width: 73px;
+        padding: 2px 30px 2px 30px;
         border-radius: 0.25rem;
-        border: 1px white solid;
+        // border: 1px white solid;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: right;  
+
+        &:hover {
+            background-color: darkgrey;
+        }
 
         h3 {
             display: flex;
@@ -146,6 +155,27 @@
     .play-logo-button {
         font-size: 18px;
         border-radius: 2px;
+        color: black;
+    }
+
+    #add-watchlist-item-button {
+        background-color: black;
+        border-radius: 50%;
+        border: 2px solid white;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        // font-weight: lighter;
+        // margin: 10px;
+
+        &:hover {
+            background-color: white;
+            color: rgb(26, 29, 41);
+            cursor: pointer;
+        }
     }
 
     .video-description {

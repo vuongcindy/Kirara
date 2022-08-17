@@ -44,6 +44,7 @@
                 object-fit: fill;
                 border-radius: 0.2rem;
                 // background-color: purple;
+                border: 2px solid transparent;
             }
 
             .video-thumbnail:hover {
@@ -52,4 +53,13 @@
             }
         }
     }
+}
+
+.search-result-container > h1 {
+    font-size: 32px;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

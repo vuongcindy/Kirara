@@ -1,0 +1,19 @@
+.watchlist-content {
+    // background-color: purple;
+    margin-top: 75px;
+    height: 86vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .watchlist-empty {
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            font-size: 22px;
+            font-weight: 100;
+        }
+    }
+
+}

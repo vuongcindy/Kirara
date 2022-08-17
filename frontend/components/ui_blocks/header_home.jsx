@@ -13,7 +13,6 @@ class HeaderHome extends React.Component {
     }
 
     render() {
-        console.log("this.props HeaderHome", this.props)
         return (
             <div className="header-container">
                 <img src={window.logoURL} className="logo"/>
@@ -35,7 +34,9 @@ class HeaderHome extends React.Component {
                         <button>
                             <i className="fa fa-plus" id="plus-logo-button" ></i> 
                             &nbsp; 
-                            <span>Watchlist</span>
+                            <Link to="/watchlist">
+                                <span>Watchlist</span>
+                            </Link>
                         </button>
                         <button>
                             <i className="fa fa-star" id="star-logo-button" ></i> 
@@ -59,7 +60,7 @@ class HeaderHome extends React.Component {
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
                         </button>
                     </Link>
-            </div>
+                </div>
         )
     }
 }
