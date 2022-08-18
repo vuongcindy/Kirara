@@ -8,6 +8,10 @@
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     overflow-y: auto;
+    
+    &:hover {
+        cursor: default;
+    }
 }
 
 

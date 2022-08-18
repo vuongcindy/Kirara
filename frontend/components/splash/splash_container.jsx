@@ -3,7 +3,7 @@ import { login } from "../../actions/session_actions"
 import Splash from "./splash";
 
 const mapStateToProps = state => ({
-    currentUser: state.entities.users[state.session.currentUserId]
+    currentUser: state.entities.user[state.session.currentUserId]
 });
 
 const mapDispatchToProps = dispatch => ({

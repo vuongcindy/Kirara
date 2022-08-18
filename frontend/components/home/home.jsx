@@ -1,7 +1,7 @@
 import React from "react"
 // import HeaderHome from "../ui_blocks/header_home"
 import { Link } from "react-router-dom";
-import Carousel from "./carousel";
+// import Carousel from "./carousel";
 import Footer from "../ui_blocks/footer";
 
 class Home extends React.Component {
@@ -22,7 +22,7 @@ class Home extends React.Component {
     }
 
     render () {
-        console.log("this.props", this.props)
+
         return (
             <div className="home-container">
                 <div className="header-container">
@@ -44,8 +44,10 @@ class Home extends React.Component {
                         </button>
                         <button>
                             <i className="fa fa-plus" id="plus-logo-button" ></i> 
-                            &nbsp; 
-                            <span>Watchlist</span>
+                            &nbsp;
+                            <Link to="/watchlist">
+                                <span>Watchlist</span>
+                            </Link> 
                         </button>
                         <button>
                             <i className="fa fa-star" id="star-logo-button" ></i> 

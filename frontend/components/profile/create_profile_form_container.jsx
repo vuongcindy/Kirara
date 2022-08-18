@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import CreateProfileForm from "./create_profile_form";
-import { createProfile } from "../../actions/profile_actions"
+import { createProfile } from "../../actions/profiles_actions"
 
 const mapStateToProps = state => ({
     profile: { profile_name: '' },

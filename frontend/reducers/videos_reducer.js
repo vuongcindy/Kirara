@@ -1,7 +1,7 @@
 import {
     RECEIVE_VIDEOS,
     RECEIVE_VIDEO
-} from "../actions/video_actions";
+} from "../actions/videos_actions";
 
 const videoReducer = (state = {}, action) => {
     Object.freeze(state);

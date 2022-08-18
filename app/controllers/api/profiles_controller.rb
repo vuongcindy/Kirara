@@ -1,7 +1,6 @@
 class Api::ProfilesController < ApplicationController
 
     def index
-        # debugger
         @profiles = current_user.profiles
         render :index
     end
@@ -14,8 +13,6 @@ class Api::ProfilesController < ApplicationController
         # debugger
         @profile = Profile.new(profile_params)
         @profile.user_id = current_user.id
-        
-        # @profile.avatar.attach(io: URI.open(get_random_avatar()))
 
         if @profile.save
             # debugger
@@ -24,16 +21,6 @@ class Api::ProfilesController < ApplicationController
             render json: @profile.errors.full_messages, status: 406
         end
     end
-
-    # def get_random_avatar
-    #     image_urls = [
-    #         "https://kirara.s3.us-west-1.amazonaws.com/lightsaber_boy.jpg",
-    #         "https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg"
-    #     ]
-    
-    #     image_index = rand(1..2).to_i
-    #     image_urls[image_index]
-    # end
 
     def update
         @profile = Profile.find(params[:id])

@@ -3,7 +3,7 @@ import {
     RECEIVE_PROFILE,
     REMOVE_PROFILE,
     REDO_PROFILE
-} from "../actions/profile_actions";
+} from "../actions/profiles_actions";
 
 const profileReducer = (state = {}, action) => {
     Object.freeze(state);

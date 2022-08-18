@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchProfile, updateProfile, deleteProfile,fetchProfiles } from "../../actions/profile_actions";
+import { fetchProfile, updateProfile, deleteProfile,fetchProfiles } from "../../actions/profiles_actions";
 import EditProfileForm from "./edit_profile_form"
 
 const mapStateToProps = ( state, ownProps ) => {

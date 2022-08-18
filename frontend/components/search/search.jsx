@@ -155,8 +155,8 @@ class Search extends React.Component {
             <div className="search-result-container">
               {this.state.results.map((video) => {
                 return (
-                  <Link to={`/videos/${video.id}`} key={video.id}>
                     <div className="video-container">
+                  <Link to={`/videos/${video.id}`} key={video.id}>
                     {video.thumbnailUrl ? (
                       <div className="video-card">
                         <img src={video.thumbnailUrl} className="video-thumbnail"/>
@@ -166,8 +166,8 @@ class Search extends React.Component {
                         {video.title}
                       </div>
                     )}
-                    </div>
                   </Link>
+                    </div>
                 )
               })}
             </div>

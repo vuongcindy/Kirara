@@ -1,16 +1,15 @@
 import { connect } from "react-redux";
 import Profiles from "./select_profile"
-import { fetchProfiles, fetchProfile } from "../../actions/profile_actions"
+import { fetchProfile, fetchProfiles, receiveCurrentProfile } from "../../actions/profiles_actions"
 
 const mapStateToProps = state => ({
-    profiles: Object.values(state.entities.profiles),
-    // userProfiles: state.entities.profiles
+    profiles: state.entities.profiles,
 });
 
 const mapDispatchToProps = dispatch => ({
     fetchProfiles: () => dispatch(fetchProfiles()),
-    // fetchProfile: (profileId) => dispatch(fetchProfile(profileId))
-    
-})
+    fetchProfile: (profileId) => dispatch(fetchProfile(profileId)),
+    receiveCurrentProfile: (id) => dispatch(receiveCurrentProfile(id))
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profiles)

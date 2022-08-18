@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import EditProfiles from "./edit_profiles";
-import { fetchProfiles, fetchProfile } from "../../actions/profile_actions"
+import { fetchProfiles, fetchProfile } from "../../actions/profiles_actions"
 
 const mapStateToProps = state => ({
     profiles: Object.values(state.entities.profiles),

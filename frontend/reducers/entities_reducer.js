@@ -5,9 +5,9 @@ import videoReducer from "./videos_reducer";
 
 const entitiesReducer = combineReducers({
 
-    users: usersReducer,
+    user: usersReducer,
     profiles: profileReducer,
-    videos: videoReducer
+    videos: videoReducer,
     
 });
 
