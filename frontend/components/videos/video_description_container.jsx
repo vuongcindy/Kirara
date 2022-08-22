@@ -4,14 +4,17 @@ import { fetchVideo } from "../../actions/videos_actions";
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        video: state.entities.videos[ownProps.match.params.id]
+        video: state.entities.videos[ownProps.match.params.id],
+        currentProfile: state.session.currentProfile
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         logout: () => dispatch(logout()),
-        fetchVideo: videoId => dispatch(fetchVideo(videoId))
+        fetchVideo: videoId => dispatch(fetchVideo(videoId)),
+        createWatchlistItem: watchlist_item => dispatch(createWatchlistItem(watchlist_item)),
+        deleteWatchlistItem: watchlistItemId => dispatch(deleteWatchlistItem(watchlistItemId))
     }
 }
 
