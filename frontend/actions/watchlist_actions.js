@@ -1,4 +1,4 @@
-import * as WatchlistAPIUtil from "../util/watchlist_api_util";
+import * as WatchlistAPIUtil from "../util/watchlist_item_api_util";
 
 export const RECEIVE_WATCHLIST_ITEMS = "RECEIVE_WATCHLIST_ITEMS";
 export const RECEIVE_WATCHLIST_ITEM = "RECEIVE_WATCHLIST_ITEM";

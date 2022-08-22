@@ -3,18 +3,20 @@ require 'open-uri'
 User.delete_all
 Profile.delete_all
 Video.delete_all
+WatchlistItem.delete_all
 
 ActiveRecord::Base.connection.reset_pk_sequence!('users')
 ActiveRecord::Base.connection.reset_pk_sequence!('profiles')
 ActiveRecord::Base.connection.reset_pk_sequence!('videos')
+#ActiveRecord::Base.connection.reset_pk_sequence!('watchlist')
 
 # demo user
-demoUser = User.create!(email: 'demo@gmail.com', password: '123456')
+demoUser = User.create(email: 'demo@gmail.com', password: '123456')
 
 # demo profiles
-demoProfile1 = Profile.create!(profile_name: 'taro', user_id: demoUser.id)
-demoProfile2 = Profile.create!(profile_name: 'ulu', user_id:  demoUser.id)
-demoProfile3 = Profile.create!(profile_name: 'poi', user_id:  demoUser.id)
+demoProfile1 = Profile.create(profile_name: 'taro', user_id: demoUser.id)
+demoProfile2 = Profile.create(profile_name: 'ulu', user_id:  demoUser.id)
+demoProfile3 = Profile.create(profile_name: 'poi', user_id:  demoUser.id)
 
 # demo profile avatars
 file = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lightsaber_boy.jpg')

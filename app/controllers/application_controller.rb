@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
     
     helper_method :current_user, :logged_in?, :require_logged_in
 
-    before_action :current_user
+    # before_action :current_user
 
     private
     def current_user

@@ -9,7 +9,7 @@ import SelectProfileContainer from "./profile/select_profile_container";
 import EditProfileContainer from "./profile/edit_profiles_container";
 import EditProfileFormContainer from "./profile/edit_profile_form_container";
 import CreateProfileFormContainer from "./profile/create_profile_form_container";
-import WatchlistContainer from "./watchlist/watchlist_container";
+import WatchlistContainer from "./watchlist_item/watchlist_container";
 import VideoDescriptionContainer from "./videos/video_description_container";
 import SearchContainer from "./search/search_container";
 
