@@ -1,1 +1,1 @@
-json.extract! watchlist, :id, :profile_id, :video_id
+json.extract! watchlist_items, :id, :profile_id, :video_id

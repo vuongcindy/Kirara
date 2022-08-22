@@ -1,1 +1,1 @@
-json.partial! 'watchlist', watchlist: @watchlist
+json.partial! 'watchlist_items', watchlist_items: @watchlist
