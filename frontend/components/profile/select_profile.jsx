@@ -36,7 +36,6 @@ class Profiles extends React.Component {
                 <HeaderProfileIndex />
                 <h1>Who's watching?</h1>    
                 <ul className="profile-image-container">
-                    {console.log("FRANK", this.props.profiles)}
                     {Object.entries(this.props.profiles).map(([profileId, profile]) => {
                         return (
                             <li key={profileId}>
