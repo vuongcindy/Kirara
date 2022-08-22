@@ -20,10 +20,10 @@ class Api::WatchlistController < ApplicationController
 
     # add watchlist item
     def create
-        @watchlist = Watchlist.new(watchlist_params)
+        @watchlist = WatchlistItems.create(watchlist_params)
 
         if @watchlist.save
-            render json: @watchlist.errors.full_messages
+            render :show
         else
             render json: @watchlist.errors.full_messages, status: 404
         end
@@ -31,9 +31,9 @@ class Api::WatchlistController < ApplicationController
 
     # delete watchlist item
     def destroy
-        @watchlist = Watch.find(params[:id])
+        @watchlist = WatchlistItems.find(params[:id])
         if @watchlist
-            @watchlist.delete
+            @watchlist.destroy
             render :show
         else
             render json: @watchlist.errors.full_messages, status: 404

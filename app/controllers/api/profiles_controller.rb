@@ -16,7 +16,7 @@ class Api::ProfilesController < ApplicationController
 
         if @profile.save
             # debugger
-            render json: @profile.errors.full_messages
+            render :show
         else
             render json: @profile.errors.full_messages, status: 406
         end
