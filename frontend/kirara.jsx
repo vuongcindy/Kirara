@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 user: { [window.currentUser.id]: window.currentUser }
             },
             session: { 
-                userId: window.currentUser.id
+                id: window.currentUser.id
                 // currentProfile: window.currentProfile.id
             }
         };
