@@ -14,7 +14,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!('videos')
 demoUser = User.create(email: 'demo@gmail.com', password: '123456')
 
 # demo profiles
-debugger
+# debugger
 demoProfile1 = Profile.create(profile_name: 'taro', user_id: demoUser.id)
 demoProfile2 = Profile.create(profile_name: 'ulu', user_id:  demoUser.id)
 demoProfile3 = Profile.create(profile_name: 'poi', user_id:  demoUser.id)
