@@ -199,3 +199,11 @@ love_is_blind_japan.background.attach(io: love_is_blind_japan_bg, filename:'love
 
 love_is_blind_japan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan.mp4')
 love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-is-blind-japan.mp4')
+
+# watchlist
+demoProfile1WatchlistItem1 = WatchlistItems.create(
+   profile_id: 1, video_id: 1
+)
+demoProfile1WatchlistItem2 = WatchlistItems.create(
+   profile_id: 1, video_id: 5
+)
