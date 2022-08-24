@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { fetchVideos } from "../../actions/videos_actions";
-import { fetchWatchlistItems } from "../../actions/watchlist_actions";
-import Watchlist from "./watchlist";
+import { fetchWatchlistItems } from "../../actions/watchlist_items_actions";
+import WatchlistItem from "./watchlist_item";
 
 const mapStateToProps = state => {
     console.log("state", state)
@@ -20,4 +20,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Watchlist);
+export default connect(mapStateToProps, mapDispatchToProps)(WatchlistItem);

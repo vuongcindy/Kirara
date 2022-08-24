@@ -3,8 +3,6 @@ import { fetchProfile, updateProfile, deleteProfile,fetchProfiles } from "../../
 import EditProfileForm from "./edit_profile_form"
 
 const mapStateToProps = ( state, ownProps ) => {
-    // console.log(state.entities.profiles[profile])
-    // debugger
     return {
         profile: state.entities.profiles[ownProps.match.params.id],
         profileId: ownProps.match.params.id,

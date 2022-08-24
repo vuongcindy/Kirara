@@ -17,7 +17,6 @@ const profileReducer = (state = {}, action) => {
             nextState[action.profile.id] = action.profile
             return nextState
         case REMOVE_PROFILE:
-            // debugger
             delete nextState[action.profileId]
             return nextState;
         case REDO_PROFILE:

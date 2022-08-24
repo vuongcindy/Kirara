@@ -16,7 +16,6 @@ class Splash extends React.Component {
     }
 
     render() {
-        // debugger
         if (!this.props) { 
             return null;
         } else {

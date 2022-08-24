@@ -9,7 +9,11 @@ class Api::WatchlistItemsController < ApplicationController
     end
 
     def show
+<<<<<<< HEAD
         @watchlist = WatchlistItems.find_by(id: params[:id])
+=======
+        @watchlist = WatchlistItem.find_by(id: params[:id])
+>>>>>>> 8d4bade (connect clone to repo)
 
         if @watchlist
             render :show
@@ -20,8 +24,12 @@ class Api::WatchlistItemsController < ApplicationController
 
     # add watchlist item
     def create
+<<<<<<< HEAD
         @watchlist = WatchlistItems.create(watchlist_params)
 
+=======
+        @watchlist = WatchlistItem.create(watchlist_item_params)
+>>>>>>> 8d4bade (connect clone to repo)
         if @watchlist.save
             render :show
         else
@@ -31,7 +39,12 @@ class Api::WatchlistItemsController < ApplicationController
 
     # delete watchlist item
     def destroy
+<<<<<<< HEAD
         @watchlist = WatchlistItems.find(params[:id])
+=======
+        @watchlist = WatchlistItem.find(params[:id])
+
+>>>>>>> 8d4bade (connect clone to repo)
         if @watchlist
             @watchlist.destroy
             render :show
@@ -41,7 +54,11 @@ class Api::WatchlistItemsController < ApplicationController
     end
 
     private
+<<<<<<< HEAD
     def watchlist_params
+=======
+    def watchlist_item_params
+>>>>>>> 8d4bade (connect clone to repo)
         params.require(:watchlist_item).permit(:profile_id, :video_id)
     end
 

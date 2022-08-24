@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import VideoDescription from "./video_description";
 import { fetchVideo } from "../../actions/videos_actions";
+import { createWatchlistItem, deleteWatchlistItem } from "../../actions/watchlist_items_actions";
 
 const mapStateToProps = (state, ownProps) => {
     return {

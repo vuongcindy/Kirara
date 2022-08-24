@@ -13,7 +13,7 @@ class Profile < ApplicationRecord
     has_many :watchlist_items,
         primary_key: :id,
         foreign_key: :profile_id,
-        class_name: :WatchlistItems
+        class_name: :WatchlistItem
 
     has_one_attached :avatar
 

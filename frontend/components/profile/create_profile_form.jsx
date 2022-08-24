@@ -21,7 +21,6 @@ class CreateProfileForm extends React.Component {
     handleAvatarClick(e) {
         e.preventDefault();
         let avatarImg = e.target.src;
-        // debugger
         return this.setState({ avatar: avatarImg })
     }
 

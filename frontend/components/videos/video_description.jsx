@@ -29,7 +29,7 @@ class VideoDescription extends React.Component {
        e.preventDefault();
        console.log('this.props', this.props)
        console.log('this.state', this.state)
-       if (!this.props.video.watchlist_items || this.props.video.watchlist_items.profile_id !== this.props.currentProfile.id) {
+       if (!this.props.video.watchlist_item || this.props.video.watchlist_item.profile_id !== this.props.currentProfile.id) {
            this.props.createWatchlistItem({profile_id: this.props.currentProfile.id, video_id: this.props.video.id})
        }
    }
@@ -38,8 +38,8 @@ class VideoDescription extends React.Component {
        e.preventDefault();
        console.log('this.props', this.props)
        console.log('this.state', this.state)
-       if (this.props.video.watchlist_items && this.props.video.watchlist_items.profile_id === this.props.currentProfile.id) {
-           this.props.deleteWatchlistItem(this.props.video.watchlist_items.id)
+       if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
+           this.props.deleteWatchlistItem(this.props.video.watchlist_item.id)
        }
    }
  
@@ -59,8 +59,8 @@ class VideoDescription extends React.Component {
    render() {
        if (!this.props.video) {return null}
        console.log("this.props",this.props)
-       console.log("this.props.video.watchlist_items", this.props.video.watchlist_items)
-       if (this.props.video.watchlist_items && this.props.video.watchlist_items.profile_id === this.props.currentProfile.id) {
+       console.log("this.props.video.watchlist_item", this.props.video.watchlist_item)
+       if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
            return (
                <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
                    <div className="header-container">

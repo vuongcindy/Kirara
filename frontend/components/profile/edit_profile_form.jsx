@@ -51,14 +51,6 @@ class EditProfileForm extends React.Component {
     }
     
     render() {
-        // debugger
-        // if (!this.props.profile) return null;
-        // this.setState({
-        //     profile_name: this.props.profile.profile_name,
-        //     user_id: this.props.profile.user_id,
-        //     id: this.props.profile.id
-        // })
-        // console.log("props", this.props.profile);
         return (
             <div className="edit-profile-form-container">
                 {/* <HeaderProfileEdit /> */}

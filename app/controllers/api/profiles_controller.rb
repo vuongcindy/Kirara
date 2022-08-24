@@ -10,12 +10,18 @@ class Api::ProfilesController < ApplicationController
     end
 
     def create
+<<<<<<< HEAD
         # debugger
+=======
+>>>>>>> 8d4bade (connect clone to repo)
         @profile = Profile.new(profile_params)
         @profile.user_id = current_user.id
 
         if @profile.save
+<<<<<<< HEAD
             # debugger
+=======
+>>>>>>> 8d4bade (connect clone to repo)
             render :show
         else
             render json: @profile.errors.full_messages, status: 406
@@ -33,11 +39,17 @@ class Api::ProfilesController < ApplicationController
     end
 
     def destroy
+<<<<<<< HEAD
         # debugger
         @profile = Profile.find(params[:id])
         if (@profile && current_user.profiles.length > 1)
             @profile.delete
             # debugger
+=======
+        @profile = Profile.find(params[:id])
+        if (@profile && current_user.profiles.length > 1)
+            @profile.delete
+>>>>>>> 8d4bade (connect clone to repo)
             render :show
         else
             render json: ['Unable to delete profile']
