@@ -4,14 +4,16 @@ export const RECEIVE_WATCHLIST_ITEMS = "RECEIVE_WATCHLIST_ITEMS";
 export const RECEIVE_WATCHLIST_ITEM = "RECEIVE_WATCHLIST_ITEM";
 export const REMOVE_WATCHLIST_ITEM = "REMOVE_WATCHLIST_ITEM";
 
-export const receiveWatchlistItems = watchlist_items => ({
-    type: RECEIVE_WATCHLIST_ITEMS,
-    watchlist_items
-});
+export const receiveWatchlistItems = watchlistItems => {
+    return ({
+        type: RECEIVE_WATCHLIST_ITEMS,
+        watchlistItems
+    })
+};
 
-export const receiveWatchlistItem = watchlist_item => ({
+export const receiveWatchlistItem = watchlistItem => ({
     type: RECEIVE_WATCHLIST_ITEM,
-    watchlist_item
+    watchlistItem
 });
 
 export const removeWatchlistItem = watchlistItemId => ({
@@ -21,24 +23,24 @@ export const removeWatchlistItem = watchlistItemId => ({
 
 export const fetchWatchlistItems = () => dispatch => {
     WatchlistAPIUtil.fetchWatchlistItems()
-        .then(watchlist_items => dispatch(receiveWatchlistItems(watchlist_items)))
+        .then(watchlistItems => dispatch(receiveWatchlistItems(watchlistItems)))
 };
 
 export const fetchWatchlistItem = watchlistItemId => dispatch => {
     return WatchlistAPIUtil.fetchWatchlistItem(watchlistItemId)
         .then(
-            watchlist_item => {
-                dispatch(receiveWatchlistItem(watchlist_item))
+            watchlistItem => {
+                dispatch(receiveWatchlistItem(watchlistItem))
             }
         )
 };
 
-export const createWatchlistItem = watchlist_item => dispatch => (
-    WatchlistAPIUtil.createWatchlistItem(watchlist_item)
-        .then(watchlist_item => dispatch(receiveWatchlistItem(watchlist_item)))
+export const createWatchlistItem = watchlistItem => dispatch => (
+    WatchlistAPIUtil.createWatchlistItem(watchlistItem)
+        .then(watchlistItem => dispatch(receiveWatchlistItem(watchlistItem)))
 );
 
-export const deleteWatchlistItem = watchlistItemId => dispatch (
+export const deleteWatchlistItem = watchlistItemId => dispatch => (
     WatchlistAPIUtil.deleteWatchlistItem(watchlistItemId)
         .then(() => dispatch(removeWatchlistItem(watchlistItemId)))
 );

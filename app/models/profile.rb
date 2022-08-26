@@ -7,8 +7,9 @@ class Profile < ApplicationRecord
         foreign_key: :user_id,
         class_name: :User
 
-    has_many :videos,
-        through: :watchlist_items
+    has_many :videos_in_watchlist,
+        through: :watchlist_items,
+        source: :video
 
     has_many :watchlist_items,
         primary_key: :id,

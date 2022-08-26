@@ -9,6 +9,17 @@ class Home extends React.Component {
         super(props)
         this.handleLogoutClick = this.handleLogoutClick.bind(this);
         this.handleClick = this.handleClick.bind(this);
+      
+    }
+
+    componentDidMount(){
+        this.props.fetchVideos()
+        this.props.receiveCurrentProfile(this.props.currentProfile)
+        
+
+        // console.log('this.props', this.props.currentProfile)
+        // console.log('this.state', this.state)
+        
     }
 
     handleLogoutClick(e) {

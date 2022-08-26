@@ -20,13 +20,10 @@ class Search extends React.Component {
   handleUpdate(e) {
     const searchInput = e.target.value.toLowerCase();
     this.setState({ searchStr: searchInput })
-    console.log("search input", searchInput)
-    console.log("this.props.videos", this.props.videos)
     const searchResult = this.props.videos.filter((video) => {
       const title = video.title.toLowerCase();
       return title.includes(searchInput)
     })
-    console.log("search result", searchResult)
 
     this.setState({ results: searchResult })
   }

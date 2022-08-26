@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.currentUser) {
         const preloadedState = {
             entities: {
-                user: { [window.currentUser.id]: window.currentUser }
+                user: { [window.currentUser.id]: window.currentUser 
+                }
             },
             session: { 
                 id: window.currentUser.id,
-                currentProfile: window.currentProfile
+                [window.currentProfile]: window.currentProfile
             }
         };
         store = configureStore(preloadedState);
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     //Testing start
+    window.store = store;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     window.login = login;

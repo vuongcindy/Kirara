@@ -4,7 +4,7 @@ class WatchlistItem < ApplicationRecord
         foreign_key: :profile_id,
         class_name: :Profile
 
-    belongs_to :videos,
+    belongs_to :video,
         primary_key: :id,
         foreign_key: :video_id,
         class_name: :Video
