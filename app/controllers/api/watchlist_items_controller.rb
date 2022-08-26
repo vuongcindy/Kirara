@@ -2,63 +2,46 @@ class Api::WatchlistItemsController < ApplicationController
 
     # profile watchlist
     def index
-        @watchlists = []
+        @watchlist_items = []
         current_user.profiles.includes(:videos).each do |profile|
-            @watchlists += profile.watchlists
+            @watchlist_items += profile.watchlist_items
         end
     end
 
     def show
-<<<<<<< HEAD
-        @watchlist = WatchlistItems.find_by(id: params[:id])
-=======
-        @watchlist = WatchlistItem.find_by(id: params[:id])
->>>>>>> 8d4bade (connect clone to repo)
+        @watchlist_item = WatchlistItem.find_by(id: params[:id])
 
-        if @watchlist
+        if @watchlist_item
             render :show
         else
-            render json: @watchlist.errors.full_messages, status: 404
+            render json: @watchlist_item.errors.full_messages, status: 404
         end
     end
 
     # add watchlist item
     def create
-<<<<<<< HEAD
-        @watchlist = WatchlistItems.create(watchlist_params)
-
-=======
-        @watchlist = WatchlistItem.create(watchlist_item_params)
->>>>>>> 8d4bade (connect clone to repo)
-        if @watchlist.save
+        @watchlist_item = WatchlistItem.new(watchlist_item_params)
+        if @watchlist_item.save
             render :show
         else
-            render json: @watchlist.errors.full_messages, status: 404
+            render json: @watchlist_item.errors.full_messages, status: 404
         end
     end
 
     # delete watchlist item
     def destroy
-<<<<<<< HEAD
-        @watchlist = WatchlistItems.find(params[:id])
-=======
-        @watchlist = WatchlistItem.find(params[:id])
+        @watchlist_item = WatchlistItem.find(params[:id])
 
->>>>>>> 8d4bade (connect clone to repo)
-        if @watchlist
-            @watchlist.destroy
+        if @watchlist_item
+            @watchlist_item.delete
             render :show
         else
-            render json: @watchlist.errors.full_messages, status: 404
+            render json: @watchlist_item.errors.full_messages, status: 404
         end
     end
 
     private
-<<<<<<< HEAD
-    def watchlist_params
-=======
     def watchlist_item_params
->>>>>>> 8d4bade (connect clone to repo)
         params.require(:watchlist_item).permit(:profile_id, :video_id)
     end
 
