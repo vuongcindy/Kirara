@@ -34,8 +34,16 @@ class Watchlist extends React.Component {
 
     render() {
         console.log("this.props", this.props)
-        // console.log("this.props.watchlist", this.state.watchlist)
         console.log("this.props.watchlist",this.props.watchlist)
+        const {videos, watchlist} = this.props
+        if (videos === undefined || watchlist === undefined) return null 
+
+        let filteredVids = []
+        for(let item of watchlist) {
+            filteredVids.push(videos[item.video_id])
+        }
+        console.log("filtered", filteredVids)
+
         if (this.props.watchlist.length < 1) {
             return (
                 <div className="watchlist-container">
@@ -97,8 +105,7 @@ class Watchlist extends React.Component {
                         </button>
                     </Link>
                 </div> */}
-                    {this.props.videos.filter((video) => {
-                        
+                    {filteredVids.map((video) => {
                     return (
                         <div className="video-container">
                         <Link to={`/videos/${video.id}`} key={video.id}>

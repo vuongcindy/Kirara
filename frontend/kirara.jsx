@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     //Testing start
+    window.store = store;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     window.login = login;

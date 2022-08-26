@@ -4,10 +4,11 @@ import { fetchWatchlistItems } from "../../actions/watchlist_items_actions";
 import WatchlistItem from "./watchlist_item";
 
 const mapStateToProps = state => {
+
     return {
         currentProfile: state.session.currentProfile.id,
         watchlist: state.session.currentProfile.watchlist_items,
-        videos: Object.values(state.entities.videos)
+        videos: state.entities.videos
     }
 }
 

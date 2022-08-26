@@ -50,8 +50,16 @@ class VideoDescription extends React.Component {
  
    componentDidMount() {
        this.props.fetchVideo(this.props.match.params.id)
-    //    this.props.receiveCurrentProfile(this.state.session.currentProfile.id)
+    //    .then(() => this.props.receiveCurrentProfile(this.state.session.currentProfile.id))
+       
    }
+
+//    componentDidUpdate(prevProps) {
+//        if(prevProps.match.params.id != this.props.match.params.id) {
+//            this.props.receiveCurrentProfile(prevProps.currentProfile.id)
+//            this.props.fetchVideo(this.props.match.params.id)
+//        }
+//    }
 
 //    componentDidUpdate(prevProps, prevState) {
 //     if (prevState.data !== this.state.data) {

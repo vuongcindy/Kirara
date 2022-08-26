@@ -26,7 +26,7 @@ class Profiles extends React.Component {
         // this.setState({ currentProfile: id })
 
         this.props.fetchProfile(id)
-            .then(() => this.props.history.push("/home"));
+            .then(() => this.props.history.push("/home")).then(this.props.fetchProfile(id));
     }
 
     render() {
