@@ -83,7 +83,6 @@ class Home extends React.Component {
                         </button>
                     </Link>
                 </div>
-                {/* <HeaderHome /> */}
 
                 {/* <Carousel /> */}
                 <div className="preview-container">
