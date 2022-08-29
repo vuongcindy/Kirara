@@ -18,15 +18,15 @@ class Profiles extends React.Component {
     handleProfileClick(e, id) {
         console.log("profileId", id)
         console.log("this.props", this.props)
+        // debugger
         e.preventDefault();
         const currentProfile = this.props.profiles[id];
 
-        this.props.receiveCurrentProfile(currentProfile);
+        this.props.receiveCurrentProfile(currentProfile)
+        
+        this.props.fetchProfile(currentProfile.id)
+            .then(() => this.props.history.push("/home"))
 
-        // this.setState({ currentProfile: id })
-
-        this.props.fetchProfile(id)
-            .then(() => this.props.history.push("/home")).then(this.props.fetchProfile(id));
     }
 
     render() {

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
 import { login, logout } from "./actions/session_actions"
-import { fetchProfiles, createProfile, updateProfile, deleteProfile } from "./util/profile_api_util"
+import { fetchProfiles, createProfile, updateProfile, deleteProfile,fetchProfile } from "./util/profile_api_util"
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             session: { 
                 id: window.currentUser.id,
-                [window.currentProfile]: window.currentProfile
+                currentProfile: JSON.parse(localStorage.getItem('currentProfile')).currentProfile
             }
         };
         store = configureStore(preloadedState);
@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
+
+    store.subscribe(() => {
+        localStorage.setItem(
+          "currentProfile", JSON.stringify(store.getState()['session'])
+        )
+      })
     
     //Testing start
     window.store = store;
@@ -32,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.login = login;
     window.logout = logout;
     window.fetchProfiles = fetchProfiles;
+    window.fetchProfile = fetchProfile;
     window.createProfile = createProfile;
     window.updateProfile = updateProfile;
     window.deleteProfile = deleteProfile;
