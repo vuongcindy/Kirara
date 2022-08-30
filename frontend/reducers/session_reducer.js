@@ -19,6 +19,9 @@ const sessionReducer = (state = _nullUser, action) => {
             return _nullUser;
         case RECEIVE_CURRENT_PROFILE:
             nextState.currentProfile = action.profileId
+            if (window.localStorage.currentProfile == undefined) {
+                window.localStorage.setItem("currentProfile", parseInt(action.profileId.id))
+            }
             return nextState;
         default:
             return state;

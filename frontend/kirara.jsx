@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             session: { 
                 id: window.currentUser.id,
-                currentProfile: JSON.parse(localStorage.getItem('currentProfile')).currentProfile
+                // currentProfile: JSON.parse(window.localStorage.getItem('currentProfile')).currentProfile
+                [window.currentProfile]: window.currentProfile
             }
         };
         store = configureStore(preloadedState);
@@ -24,12 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
+    
+    // window.localStorage.setItem("currentProfile", "test1")
+    console.log("localStorage",localStorage)
+    console.log("window.localStorage", window.localStorage)
 
-    store.subscribe(() => {
-        localStorage.setItem(
-          "currentProfile", JSON.stringify(store.getState()['session'])
-        )
-      })
+    // store.subscribe(() => {
+    //     window.localStorage.setItem(
+    //         // browser storage only accepts data-type strings
+    //       "currentProfile", JSON.stringify(store.getState(), session.currentProfile)
+    //     )
+    // })
     
     //Testing start
     window.store = store;
