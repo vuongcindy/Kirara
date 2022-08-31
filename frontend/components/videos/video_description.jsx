@@ -111,7 +111,7 @@ class VideoDescription extends React.Component {
                            <h3>Play</h3>
                        </button>
                        <button>
-                           <i className="fa fa-minus" id="remove-watchlist-item-button" onClick={this.handleWatchlistRemove}></i>
+                           <i className="fa fa-check" id="remove-watchlist-item-button" onClick={this.handleWatchlistRemove}></i>
                        </button>
                        <video
                        src={this.props.video.videoUrl}
