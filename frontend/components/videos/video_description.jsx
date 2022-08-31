@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Nav from "../nav/nav_container"
+import Footer from "../ui_blocks/footer"
  
 class VideoDescription extends React.Component {
    constructor(props) {
@@ -88,49 +90,7 @@ class VideoDescription extends React.Component {
        if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
            return (
                <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
-                   <div className="header-container">
-                   <img src={window.logoURL} className="logo"/>
-                       <div className="button-container">
-                           <button>
-                               <i className="fa fa-home" id="home-logo-button" ></i>
-                               &nbsp;
-                               <Link to="/home">
-                                   <span>Home</span>
-                               </Link>
-                           </button>
-                           <button>
-                               <i className="fa fa-search" id="search-logo-button" ></i>
-                               &nbsp;
-                               <span>Search</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-plus" id="plus-logo-button" ></i>
-                               &nbsp;
-                               <span>Watchlist</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-star" id="star-logo-button" ></i>
-                               &nbsp;
-                               <span>Studios</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-film" id="film-logo-button" ></i>
-                               &nbsp;
-                               <span>Movies</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-television" id="tv-logo-button" ></i>
-                               &nbsp;
-                               <span>Series</span>
-                           </button>
-                       </div>
-                       <button className="session-end" onClick={this.handleLogoutClick}>Logout</button>
-                       <Link to="/edit-profiles">
-                           <button>
-                               <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
-                           </button>
-                       </Link>
-                   </div>
+                   <Nav />
   
                    <div className="video-description-content">
                        <div className="video-title">
@@ -168,66 +128,13 @@ class VideoDescription extends React.Component {
                        </div>
                    </div>
   
-                   <div className="footer-container">
-                       <ul>
-                           <li>LinkedIn</li>
-                           <li>AngelList</li>
-                           <li>GitHub</li>
-                           <li>Personal Website</li>
-                       </ul>
-                       <br />
-                       <p className="copyright">
-                           &copy; Kirara. All Rights Reserved
-                       </p>
-                   </div>
+                   <Footer />
                </div>
            )
        } else {
            return (
                <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
-                   <div className="header-container">
-                   <img src={window.logoURL} className="logo"/>
-                       <div className="button-container">
-                           <button>
-                               <i className="fa fa-home" id="home-logo-button" ></i>
-                               &nbsp;
-                               <Link to="/home">
-                                   <span>Home</span>
-                               </Link>
-                           </button>
-                           <button>
-                               <i className="fa fa-search" id="search-logo-button" ></i>
-                               &nbsp;
-                               <span>Search</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-plus" id="plus-logo-button" ></i>
-                               &nbsp;
-                               <span>Watchlist</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-star" id="star-logo-button" ></i>
-                               &nbsp;
-                               <span>Studios</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-film" id="film-logo-button" ></i>
-                               &nbsp;
-                               <span>Movies</span>
-                           </button>
-                           <button>
-                               <i className="fa fa-television" id="tv-logo-button" ></i>
-                               &nbsp;
-                               <span>Series</span>
-                           </button>
-                       </div>
-                       <button className="session-end" onClick={this.handleLogoutClick}>Logout</button>
-                       <Link to="/edit-profiles">
-                           <button>
-                               <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
-                           </button>
-                       </Link>
-                   </div>
+                   <Nav />
   
                    <div className="video-description-content">
                        <div className="video-title">
@@ -265,18 +172,7 @@ class VideoDescription extends React.Component {
                        </div>
                    </div>
   
-                   <div className="footer-container">
-                       <ul>
-                           <li>LinkedIn</li>
-                           <li>AngelList</li>
-                           <li>GitHub</li>
-                           <li>Personal Website</li>
-                       </ul>
-                       <br />
-                       <p className="copyright">
-                           &copy; Kirara. All Rights Reserved
-                       </p>
-                   </div>
+                   <Footer />
                </div>
            )
        }

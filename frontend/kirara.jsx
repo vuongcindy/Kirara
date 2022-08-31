@@ -9,6 +9,12 @@ import { fetchProfiles, createProfile, updateProfile, deleteProfile,fetchProfile
 document.addEventListener('DOMContentLoaded', () => {
     let store;
     if (window.currentUser) {
+        let current_profile_item = JSON.parse(window.localStorage.getItem('currentProfile'))
+        let current_profile = undefined
+        if (current_profile_item) {
+            current_profile = current_profile_item.currentProfile
+        }
+
         const preloadedState = {
             entities: {
                 user: { [window.currentUser.id]: window.currentUser 
@@ -16,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             session: { 
                 id: window.currentUser.id,
-                // currentProfile: JSON.parse(window.localStorage.getItem('currentProfile')).currentProfile
-                [window.currentProfile]: window.currentProfile
+                currentProfile: current_profile
             }
         };
         store = configureStore(preloadedState);
         delete window.currentUser;
+        localStorage.clear()
     } else {
         store = configureStore();
     }
@@ -29,13 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // window.localStorage.setItem("currentProfile", "test1")
     console.log("localStorage",localStorage)
     console.log("window.localStorage", window.localStorage)
+    console.log("store.getState()",store.getState())
 
-    // store.subscribe(() => {
-    //     window.localStorage.setItem(
-    //         // browser storage only accepts data-type strings
-    //       "currentProfile", JSON.stringify(store.getState(), session.currentProfile)
-    //     )
-    // })
+
+    store.subscribe(() => {
+        window.localStorage.setItem(
+            // browser storage only accepts data-type strings
+          "currentProfile", JSON.stringify(store.getState()['session'])
+        )
+    })
     
     //Testing start
     window.store = store;
