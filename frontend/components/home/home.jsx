@@ -3,18 +3,19 @@ import React from "react"
 import { Link } from "react-router-dom";
 // import Carousel from "./carousel";
 import Footer from "../ui_blocks/footer";
+import Nav from "../nav/nav_container"
 
 class Home extends React.Component {
     constructor(props) {
         super(props)
-        this.handleLogoutClick = this.handleLogoutClick.bind(this);
+        // this.handleLogoutClick = this.handleLogoutClick.bind(this);
         this.handleClick = this.handleClick.bind(this);
       
     }
 
     componentDidMount(){
         this.props.fetchVideos()
-        this.props.receiveCurrentProfile(this.props.currentProfile)
+        // this.props.receiveCurrentProfile(this.props.currentProfile)
         
 
         // console.log('this.props', this.props.currentProfile)
@@ -22,10 +23,10 @@ class Home extends React.Component {
         
     }
 
-    handleLogoutClick(e) {
-        e.preventDefault();
-        this.props.logout()
-    }
+    // handleLogoutClick(e) {
+    //     e.preventDefault();
+    //     this.props.logout()
+    // }
 
     handleClick(e) {
         e.preventDefault();
@@ -36,7 +37,8 @@ class Home extends React.Component {
 
         return (
             <div className="home-container">
-                <div className="header-container">
+                <Nav/>
+                {/* <div className="header-container">
                 <img src={window.logoURL} className="logo"/>
                     <div className="button-container">
                         <button>
@@ -82,8 +84,7 @@ class Home extends React.Component {
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/chubby_smile.jpeg" className="edit-profile-button"/>
                         </button>
                     </Link>
-                </div>
-                {/* <HeaderHome /> */}
+                </div> */}
 
                 {/* <Carousel /> */}
                 <div className="preview-container">

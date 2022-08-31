@@ -36,14 +36,10 @@ export const fetchProfiles = () => dispatch => (
         .then(profiles => dispatch(receiveProfiles(profiles)))
 );
 
-export const fetchProfile = profileId => dispatch => {
-    return ProfileAPIUtil.fetchProfile(profileId)
-        .then(
-            profile => {
-                dispatch(receiveProfile(profile))
-            }
-        )
-}
+export const fetchProfile = profileId => dispatch => (
+    ProfileAPIUtil.fetchProfile(profileId)
+        .then(profile => dispatch(receiveProfile(profile)))
+)
 
 export const createProfile = profile => dispatch => (
     ProfileAPIUtil.createProfile(profile)

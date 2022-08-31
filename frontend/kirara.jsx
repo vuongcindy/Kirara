@@ -3,12 +3,18 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
 import { login, logout } from "./actions/session_actions"
-import { fetchProfiles, createProfile, updateProfile, deleteProfile } from "./util/profile_api_util"
+import { fetchProfiles, createProfile, updateProfile, deleteProfile,fetchProfile } from "./util/profile_api_util"
 
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
     if (window.currentUser) {
+        let current_profile_item = JSON.parse(window.localStorage.getItem('currentProfile'))
+        let current_profile = undefined
+        if (current_profile_item) {
+            current_profile = current_profile_item.currentProfile
+        }
+
         const preloadedState = {
             entities: {
                 user: { [window.currentUser.id]: window.currentUser 
@@ -16,14 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             session: { 
                 id: window.currentUser.id,
-                [window.currentProfile]: window.currentProfile
+                currentProfile: current_profile
             }
         };
         store = configureStore(preloadedState);
         delete window.currentUser;
+        localStorage.clear()
     } else {
         store = configureStore();
     }
+    
+    // window.localStorage.setItem("currentProfile", "test1")
+    console.log("localStorage",localStorage)
+    console.log("window.localStorage", window.localStorage)
+    console.log("store.getState()",store.getState())
+
+
+    store.subscribe(() => {
+        window.localStorage.setItem(
+            // browser storage only accepts data-type strings
+          "currentProfile", JSON.stringify(store.getState()['session'])
+        )
+    })
     
     //Testing start
     window.store = store;
@@ -32,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.login = login;
     window.logout = logout;
     window.fetchProfiles = fetchProfiles;
+    window.fetchProfile = fetchProfile;
     window.createProfile = createProfile;
     window.updateProfile = updateProfile;
     window.deleteProfile = deleteProfile;
