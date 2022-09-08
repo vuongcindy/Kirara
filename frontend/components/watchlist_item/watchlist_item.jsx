@@ -49,7 +49,7 @@ class Watchlist extends React.Component {
             return (
                 <div className="watchlist-container">
                     <Nav />
-                    <div className="watchlist-content">
+                    <div className="watchlist-empty-content">
                         <div className="watchlist-empty">
                             <h5>Your watchlist is empty</h5>
                             <span>Content you add to your watchlist will appear here.</span>

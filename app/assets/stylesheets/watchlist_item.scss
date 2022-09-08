@@ -1,6 +1,6 @@
 .watchlist-content {
     // background-color: purple;
-    // margin-top: 75px;
+    margin-top: 75px;
     // height: 86vh;
     // display: flex;
     // justify-content: space-around;
@@ -17,7 +17,6 @@
     // margin-top: 95px;
 
     .video-container {
-        // background-color: red;
         width: 275px;
         height: 155px;
         .video-card {
@@ -38,17 +37,29 @@
             }
         }
     }
-    
+}
+
+.watchlist-empty-content {
+    height: 73vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 275px);
+    column-gap: 50px;
+    justify-content: center;
+    margin: 0 5% 0 5%;
+    margin-top: 95px;
+
     .watchlist-empty {
         display: flex;
         flex-direction: column;
+        // background-color: green;
+        margin-top: auto;
+        margin-bottom: auto;
 
         h5 {
             font-size: 22px;
             font-weight: 100;
         }
     }
-
 }
 
 .watchlist-title {
