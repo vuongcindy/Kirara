@@ -28,11 +28,7 @@ export const fetchWatchlistItems = () => dispatch => {
 
 export const fetchWatchlistItem = watchlistItemId => dispatch => (
     WatchlistAPIUtil.fetchWatchlistItem(watchlistItemId)
-        .then(
-            watchlistItem => {
-                dispatch(receiveWatchlistItem(watchlistItem))
-            }
-        )
+        .then(watchlistItem => dispatch(receiveWatchlistItem(watchlistItem)))
 );
 
 export const createWatchlistItem = watchlistItem => dispatch => (
