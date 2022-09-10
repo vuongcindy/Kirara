@@ -1,2 +1,0 @@
-module WatchlistItemsHelper
-end
