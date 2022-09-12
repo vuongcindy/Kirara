@@ -4,7 +4,6 @@ class Api::WatchlistItemsController < ApplicationController
     def index
         # @watchlist_items = WatchlistItem.where(profile_id: current_user.profiles.id)
         # @watchlist_items = []
-        # debugger
         # current_user.profiles.includes(:videos_in_watchlist).each do |profile|
         # current_user.profiles.each do |profile|
         #     @watchlist_items += profile.watchlist_items

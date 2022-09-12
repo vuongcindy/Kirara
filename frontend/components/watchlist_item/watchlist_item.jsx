@@ -20,9 +20,7 @@ class Watchlist extends React.Component {
     // checkWatchlistItem() {
     //     // check if watchlistitemid === video.id
     //     // return if true
-    //     debugger
     //     const includedWatchlistItems = this.props.videos.filter((video) => {
-    //         debugger
     //         const videoId = video.id
     //         const watchlistItemVideoId = this.props.watchlistItems.video_id;
     //         if (videoId === watchlistItemVideoId) {

@@ -18,7 +18,6 @@ class Profiles extends React.Component {
     handleProfileClick(e, id) {
         console.log("profileId", id)
         console.log("this.props", this.props)
-        // debugger
         e.preventDefault();
         const currentProfile = this.props.profiles[id];
 
