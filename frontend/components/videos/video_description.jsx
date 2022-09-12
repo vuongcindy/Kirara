@@ -51,18 +51,11 @@ class VideoDescription extends React.Component {
    }
  
    componentDidMount() {
-       this.props.fetchVideo(this.props.match.params.id)
+        this.props.fetchWatchlistItems()
+            .then(this.props.fetchVideo(this.props.match.params.id))
     //    .then(() => this.props.receiveCurrentProfile(this.state.session.currentProfile.id))
-       
    }
-
-//    componentDidUpdate(prevProps) {
-//        if(prevProps.match.params.id != this.props.match.params.id) {
-//            this.props.receiveCurrentProfile(prevProps.currentProfile.id)
-//            this.props.fetchVideo(this.props.match.params.id)
-//        }
-//    }
-
+   
 //    componentDidUpdate(prevProps, prevState) {
 //     if (prevState.data !== this.state.data) {
 //       // Now fetch the new data here.
@@ -87,7 +80,9 @@ class VideoDescription extends React.Component {
        if (!this.props.currentProfile) {return null}
        console.log("this.props",this.props)
        console.log("this.props.video.watchlist_item", this.props.video.watchlist_item)
+       console.log("this.props.currentProfile.id", this.props.currentProfile.id)
        if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
+           console.log(this.props.video)
            return (
                <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
                    <Nav />

@@ -3,9 +3,15 @@ class Api::WatchlistItemsController < ApplicationController
     # profile watchlist
     def index
         @watchlist_items = []
-        current_user.profiles.includes(:videos).each do |profile|
+        current_user.profiles.includes(:videos_in_watchlist).each do |profile|
             @watchlist_items += profile.watchlist_items
         end
+
+        # if params[:profile_id]
+        #     @watchlist_items = WatchlistItem.where(profile_id: params[:profile_id])
+        # else
+        #     @watchlist_items = WatchlistItem.all
+        # end
     end
 
     def show

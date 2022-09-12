@@ -21,7 +21,7 @@ const mapDispatchToProps = dispatch => {
         createWatchlistItem: watchlistItem => dispatch(createWatchlistItem(watchlistItem)),
         deleteWatchlistItem: watchlistItemId => dispatch(deleteWatchlistItem(watchlistItemId)),
         fetchWatchlistItems: () => dispatch(fetchWatchlistItems()),
-        receiveCurrentProfile: profileId => dispatch(receiveCurrentProfile(profileId))
+        // receiveCurrentProfile: profileId => dispatch(receiveCurrentProfile(profileId))
     }
 }
 

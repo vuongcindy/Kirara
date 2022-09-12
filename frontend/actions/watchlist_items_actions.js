@@ -4,12 +4,10 @@ export const RECEIVE_WATCHLIST_ITEMS = "RECEIVE_WATCHLIST_ITEMS";
 export const RECEIVE_WATCHLIST_ITEM = "RECEIVE_WATCHLIST_ITEM";
 export const REMOVE_WATCHLIST_ITEM = "REMOVE_WATCHLIST_ITEM";
 
-export const receiveWatchlistItems = watchlistItems => {
-    return ({
-        type: RECEIVE_WATCHLIST_ITEMS,
-        watchlistItems
-    })
-};
+export const receiveWatchlistItems = watchlistItems => ({
+    type: RECEIVE_WATCHLIST_ITEMS,
+    watchlistItems
+});
 
 export const receiveWatchlistItem = watchlistItem => ({
     type: RECEIVE_WATCHLIST_ITEM,
@@ -21,10 +19,10 @@ export const removeWatchlistItem = watchlistItemId => ({
     watchlistItemId
 });
 
-export const fetchWatchlistItems = () => dispatch => {
+export const fetchWatchlistItems = () => dispatch => (
     WatchlistAPIUtil.fetchWatchlistItems()
         .then(watchlistItems => dispatch(receiveWatchlistItems(watchlistItems)))
-};
+);
 
 export const fetchWatchlistItem = watchlistItemId => dispatch => (
     WatchlistAPIUtil.fetchWatchlistItem(watchlistItemId)
