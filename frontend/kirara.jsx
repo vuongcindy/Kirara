@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentProfile: current_profile
             }
         };
+        
         store = configureStore(preloadedState);
         delete window.currentUser;
         localStorage.clear()

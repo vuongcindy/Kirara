@@ -6,9 +6,9 @@ import Footer from "../ui_blocks/footer"
 class VideoDescription extends React.Component {
    constructor(props) {
        super(props);
-       this.state = {
-           watchlist: false
-       }
+    //    this.state = {
+    //        watchlist: false
+    //    }
        this.handleWatchClick = this.handleWatchClick.bind(this);
        this.handleLogoutClick = this.handleLogoutClick.bind(this);
        this.runtimeConversion = this.runtimeConversion.bind(this);
@@ -36,11 +36,13 @@ class VideoDescription extends React.Component {
        console.log('this.state', this.state)
     //    let videoId = this.props.video.id
         this.props.createWatchlistItem({profile_id: this.props.currentProfile.id, video_id: this.props.video.id})
+            .then(() => this.props.fetchVideo(this.props.match.params.id))
+            .then(() => this.props.receiveCurrentProfile(this.props.currentProfile))
+            .then(() => this.props.fetchWatchlistItems())
+            .then(() => console.log("this.state.after", this.state))
         // this.setState({ watchlist: !this.state.watchlist})
         // this.forceUpdate()
-        window.location.reload(false);
-                // this.props.fetchWatchlistItems()}
-
+        // window.location.reload(false);
    }
 
 //    componentDidUpdate(prevState) {
@@ -80,10 +82,11 @@ class VideoDescription extends React.Component {
     //    console.log("this.props", this.props)
        if (!this.props.video) {return null}
        if (!this.props.currentProfile) {return null}
-    //    console.log("this.props.watchlist_items", this.props.watchlist_items)
+       if (!this.props.watchlist_items) {return null}
+       console.log("this.props.watchlist_items", this.props.watchlist_items)
     //    console.log("this.props.currentProfile.id", this.props.currentProfile.id)
        let is_watchlist_item = false
-       console.log("this.state",this.state)
+    //    console.log("this.state",this.state)
        for (let i = 0; i < this.props.watchlist_items.length; i++) {
            if (this.props.watchlist_items[i]["video_id"] === this.props.video.id
            && this.props.watchlist_items[i]["profile_id"] === this.props.currentProfile.id
@@ -91,7 +94,7 @@ class VideoDescription extends React.Component {
                 is_watchlist_item = true
            }
        }
-    //    console.log("is_watchlist_item_loop", is_watchlist_item)
+       console.log("is_watchlist_item_loop", is_watchlist_item)
     //    debugger
        if (is_watchlist_item === true) {
            return (
