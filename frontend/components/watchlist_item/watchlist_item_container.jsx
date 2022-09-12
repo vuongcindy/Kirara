@@ -7,7 +7,8 @@ const mapStateToProps = state => {
 
     return {
         currentProfile: state.session.currentProfile.id,
-        watchlist: state.session.currentProfile.watchlist_items,
+        // watchlist: state.session.currentProfile.watchlist_items,
+        watchlist: Object.values(state.entities.watchlist_items).filter((watchlist_item) => watchlist_item),
         videos: state.entities.videos
     }
 }

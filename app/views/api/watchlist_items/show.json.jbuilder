@@ -1,1 +1,1 @@
-json.partial! 'watchlist_item', watchlist_item: @watchlist_item
+json.extract! @watchlist_item, :id, :profile_id, :video_id

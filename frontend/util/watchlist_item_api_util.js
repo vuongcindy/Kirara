@@ -1,9 +1,9 @@
-export const fetchWatchlistItems = () => {
-    return $.ajax({
+export const fetchWatchlistItems = () => (
+    $.ajax({
         method: 'GET',
         url: '/api/watchlist_items'
     })
-};
+);
 
 export const fetchWatchlistItem = id => {
     return $.ajax({

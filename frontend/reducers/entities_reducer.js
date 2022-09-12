@@ -9,7 +9,7 @@ const entitiesReducer = combineReducers({
     user: usersReducer,
     profiles: profileReducer,
     videos: videoReducer,
-    watchlist: watchlistItemReducer
+    watchlist_items: watchlistItemReducer
     
 });
 

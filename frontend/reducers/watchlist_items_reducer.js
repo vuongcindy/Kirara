@@ -9,7 +9,8 @@ const watchlistItemReducer = (state = {}, action) => {
     const nextState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_WATCHLIST_ITEMS:
-            return action.watchlist_items;
+            // debugger
+            return action.watchlistItems;
         case RECEIVE_WATCHLIST_ITEM:
             nextState[action.watchlistItemId] = action.watchlistItemId
             return nextState;

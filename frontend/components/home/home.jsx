@@ -28,8 +28,8 @@ class Home extends React.Component {
     //     this.props.logout()
     // }
 
-    handleClick(e) {
-        e.preventDefault();
+    handleClick() {
+        // e.preventDefault();
         this.props.history.push("/videos/1")
     }
 

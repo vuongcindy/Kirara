@@ -7,15 +7,15 @@ class Profile < ApplicationRecord
         foreign_key: :user_id,
         class_name: :User
 
+    has_many :watchlist_items,
+    primary_key: :id,
+    foreign_key: :profile_id,
+    class_name: :WatchlistItem
+    
     has_many :videos_in_watchlist,
         through: :watchlist_items,
         source: :video
-
-    has_many :watchlist_items,
-        primary_key: :id,
-        foreign_key: :profile_id,
-        class_name: :WatchlistItem
-
+        
     has_one_attached :avatar
 
     before_validation :ensure_attached_avatar
