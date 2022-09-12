@@ -9,10 +9,10 @@ import { fetchProfiles, createProfile, updateProfile, deleteProfile,fetchProfile
 document.addEventListener('DOMContentLoaded', () => {
     let store;
     if (window.currentUser) {
-        let current_profile_item = JSON.parse(window.localStorage.getItem('currentProfile'))
+        let currentProfileItem = JSON.parse(window.localStorage.getItem('currentProfile'))
         let current_profile = undefined
-        if (current_profile_item) {
-            current_profile = current_profile_item.currentProfile
+        if (currentProfileItem) {
+            current_profile = currentProfileItem.currentProfile
         }
 
         const preloadedState = {
