@@ -43,10 +43,15 @@ class VideoDescription extends React.Component {
        e.preventDefault();
        console.log('this.props', this.props)
        console.log('this.state', this.state)
+       for (let i = 0; i < this.props.watchlist_item.length; i++) {
+        if (this.props.watchlist_item[i]["video_id"] === this.props.video.id) {
+            this.props.deleteWatchlistItem(this.props.watchlist_item[i]["id"])
+        }
+    }
     //    if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
     // }
     // let videoId = this.props.video.id
-        this.props.deleteWatchlistItem(this.props.video.watchlist_item.id)
+        
         // .then(this.props.history.push(`/videos/${video.id}`))
    }
  
@@ -79,10 +84,19 @@ class VideoDescription extends React.Component {
        if (!this.props.video) {return null}
        if (!this.props.currentProfile) {return null}
        console.log("this.props",this.props)
-       console.log("this.props.video.watchlist_item", this.props.video.watchlist_item)
+       console.log("this.props.watchlist_item", this.props.watchlist_item)
        console.log("this.props.currentProfile.id", this.props.currentProfile.id)
-       if (this.props.video.watchlist_item && this.props.video.watchlist_item.profile_id === this.props.currentProfile.id) {
-           console.log(this.props.video)
+       let is_watchlist_item = false
+       console.log("is_watchlist_item_let", is_watchlist_item)
+       for (let i = 0; i < this.props.watchlist_item.length; i++) {
+           if (this.props.watchlist_item[i]["video_id"] === this.props.video.id
+           && this.props.watchlist_item[i]["profile_id"] === this.props.currentProfile.id
+           ) {
+                is_watchlist_item = true
+           }
+       }
+       console.log("is_watchlist_item_loop", is_watchlist_item)
+       if (is_watchlist_item === true) {
            return (
                <div className="video-description-container" style={{backgroundImage: `url(${this.props.video.backgroundUrl})`}}>
                    <Nav />
