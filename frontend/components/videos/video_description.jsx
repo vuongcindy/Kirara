@@ -32,14 +32,10 @@ class VideoDescription extends React.Component {
  
    handleWatchlistAdd(e) {
        e.preventDefault();
-       console.log('this.props', this.props)
-       console.log('this.state', this.state)
-    //    let videoId = this.props.video.id
         this.props.createWatchlistItem({profile_id: this.props.currentProfile.id, video_id: this.props.video.id})
             .then(() => this.props.fetchVideo(this.props.match.params.id))
             .then(() => this.props.receiveCurrentProfile(this.props.currentProfile))
             .then(() => this.props.fetchWatchlistItems())
-            .then(() => console.log("this.state.after", this.state))
         // this.setState({ watchlist: !this.state.watchlist})
         // this.forceUpdate()
         // window.location.reload(false);
@@ -53,8 +49,6 @@ class VideoDescription extends React.Component {
  
    handleWatchlistRemove(e) {
        e.preventDefault();
-       console.log('this.props', this.props)
-       console.log('this.state', this.state)
        for (let i = 0; i < this.props.watchlist_items.length; i++) {
         if (this.props.watchlist_items[i]["video_id"] === this.props.video.id) {
             this.props.deleteWatchlistItem(this.props.watchlist_items[i]["id"])
@@ -62,7 +56,6 @@ class VideoDescription extends React.Component {
    }
  
    componentDidMount() {
-       console.log("this.props.mount", this.props)
         this.props.fetchVideo(this.props.match.params.id)
         this.props.receiveCurrentProfile(this.props.currentProfile)
             // .then(() => this.props.receiveCurrentProfile(this.props.currentProfile.id))
@@ -79,14 +72,10 @@ class VideoDescription extends React.Component {
    }
  
    render() {
-    //    console.log("this.props", this.props)
        if (!this.props.video) {return null}
        if (!this.props.currentProfile) {return null}
        if (!this.props.watchlist_items) {return null}
-       console.log("this.props.watchlist_items", this.props.watchlist_items)
-    //    console.log("this.props.currentProfile.id", this.props.currentProfile.id)
        let is_watchlist_item = false
-    //    console.log("this.state",this.state)
        for (let i = 0; i < this.props.watchlist_items.length; i++) {
            if (this.props.watchlist_items[i]["video_id"] === this.props.video.id
            && this.props.watchlist_items[i]["profile_id"] === this.props.currentProfile.id
@@ -94,7 +83,6 @@ class VideoDescription extends React.Component {
                 is_watchlist_item = true
            }
        }
-       console.log("is_watchlist_item_loop", is_watchlist_item)
        if (is_watchlist_item === true) {
            return (
             //    <div>

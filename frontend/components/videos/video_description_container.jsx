@@ -6,8 +6,6 @@ import { logout } from "../../actions/session_actions";
 import { receiveCurrentProfile } from "../../actions/profiles_actions";
 
 const mapStateToProps = (state, ownProps) => {
-    console.log("state.entities.watchlist_items", state.entities.watchlist_items)
-    console.log("Object.values(state.entities.watchlist_items)", Object.values(state.entities.watchlist_items))
     return {
         video: state.entities.videos[ownProps.match.params.id],
         currentProfile: state.session.currentProfile,
