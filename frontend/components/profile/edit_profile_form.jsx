@@ -37,7 +37,6 @@ class EditProfileForm extends React.Component {
 
     handleDeleteClick(e) {
         e.preventDefault();
-        console.log("props", this.props.profileId)
         this.props.deleteProfile(this.props.profileId)
             .then(() =>
                 this.props.history.push("/select-profile")

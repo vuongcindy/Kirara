@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 class CreateProfileForm extends React.Component {
     constructor(props) {
         super(props);
-        // console.log(props)
-        // this.state = this.props.profile;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleAvatarClick = this.handleAvatarClick.bind(this);
     }
