@@ -32,8 +32,6 @@ class Watchlist extends React.Component {
     // }
 
     render() {
-        console.log("this.props", this.props)
-        console.log("this.props.watchlist",this.props.watchlist)
         const {videos, watchlist} = this.props
         if (videos === undefined || watchlist === undefined) return null 
 
@@ -41,7 +39,6 @@ class Watchlist extends React.Component {
         for(let item of watchlist) {
             filteredVids.push(videos[item.video_id])
         }
-        console.log("filtered", filteredVids)
 
         if (this.props.watchlist.length < 1) {
             return (
@@ -72,7 +69,6 @@ class Watchlist extends React.Component {
                                 <div className="video-card">
                                     <img src={video.thumbnailUrl} className="video-thumbnail"/>
                                     {/* Cat */}
-                                    {/* {console.log(video.thumbnailUrl)} */}
                                 </div>
                                 ) : (
                                 <div>
@@ -83,7 +79,6 @@ class Watchlist extends React.Component {
                             </Link>
                             </div>
                             )
-                        // {console.log(video)}
                         })
                         }
                         {/* </div> */}
