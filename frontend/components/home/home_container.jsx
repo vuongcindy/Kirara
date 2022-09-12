@@ -4,13 +4,10 @@ import { fetchVideo, fetchVideos } from '../../actions/videos_actions'
 import { receiveCurrentProfile, fetchProfile } from '../../actions/profiles_actions'
 import Home from "./home"
 
-const mapStateToProps = (state, ownProps) => {
-  console.log('state', state, ownProps)
+const mapStateToProps = state => {
   return {
     currentProfile: state.session.currentProfile
   };
-  console.log('state2', state)
-
 };
 
 const mapDispatchToProps = dispatch => ({
