@@ -215,8 +215,8 @@ lion_king = Video.create!(
 lion_king_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
 lion_king.thumbnail.attach(io: lion_king_thumbnail, filename: 'lion-king-thumbnail.jpeg')
 
-lion_king_bg = URI.open('')
-lion_king.background.attach(io: lion_king_bg, filename:'')
+lion_king_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-bg.jpg')
+lion_king.background.attach(io: lion_king_bg, filename:'lion-king-bg.jpg')
 
 lion_king_video = URI.open('')
 lion_king.video.attach(io: lion_king_video, filename: '')
@@ -234,8 +234,8 @@ inuyasha = Video.create!(
 inuyasha_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
 inuyasha.thumbnail.attach(io: inuyasha_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
 
-inuyasha_bg = URI.open('')
-inuyasha.background.attach(io: inuyasha_bg, filename:'')
+inuyasha_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-bg.jpg')
+inuyasha.background.attach(io: inuyasha_bg, filename:'inuyasha-bg.jpg')
 
 inuyasha_video = URI.open('')
 inuyasha.video.attach(io: inuyasha_video, filename: '')
@@ -253,8 +253,8 @@ toradora = Video.create!(
 toradora_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
 toradora.thumbnail.attach(io: toradora_thumbnail, filename: 'toradora-thumbnail.jpeg')
 
-toradora_bg = URI.open('')
-toradora.background.attach(io: toradora_bg, filename:'')
+toradora_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-bg.jpg')
+toradora.background.attach(io: toradora_bg, filename:'toradora-bg.jpg')
 
 toradora_video = URI.open('')
 toradora.video.attach(io: toradora_video, filename: '')
@@ -272,8 +272,8 @@ one_piece = Video.create!(
 one_piece_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
 one_piece.thumbnail.attach(io: one_piece_thumbnail, filename: 'one-piece-thumbnail.jpeg')
 
-one_piece_bg = URI.open('')
-one_piece.background.attach(io: one_piece_bg, filename:'')
+one_piece_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-bg.jpg')
+one_piece.background.attach(io: one_piece_bg, filename:'one-piece-bg.jpg')
 
 one_piece_video = URI.open('')
 one_piece.video.attach(io: one_piece_video, filename: '')
@@ -291,14 +291,14 @@ spy_x_family = Video.create!(
 spy_x_family_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
 spy_x_family.thumbnail.attach(io: spy_x_family_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
 
-spy_x_family_bg = URI.open('')
-spy_x_family.background.attach(io: spy_x_family_bg, filename:'')
+spy_x_family_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-bg.jpg')
+spy_x_family.background.attach(io: spy_x_family_bg, filename:'spy-x-family-bg.jpg')
 
 spy_x_family_video = URI.open('')
 spy_x_family.video.attach(io: spy_x_family_video, filename: '')
 
 # 16 rurouni kenshin
-placeholder = Video.create!(
+rurouni_kenshin = Video.create!(
     title: "Rurouni Kenshin", 
     description:"Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war. His tale is about redemption of his past and all his murders by helping those in trouble with his reverse-blade sword, the sakabato.", 
     studio: "Viz Media", 
@@ -307,14 +307,14 @@ placeholder = Video.create!(
     runtime: 142200, 
     video_type: "series"
 )
-placeholder_thumbnail = URI.open('')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: '')
+rurouni_kenshin_thumbnail = URI.open('')
+rurouni_kenshin.thumbnail.attach(io: rurouni_kenshin_thumbnail, filename: '')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+rurouni_kenshin_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-bg.jpg')
+rurouni_kenshin.background.attach(io: rurouni_kenshin_bg, filename:'rurouni-kenshin-bg.jpg')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+rurouni_kenshin_video = URI.open('')
+rurouni_kenshin.video.attach(io: rurouni_kenshin_video, filename: '')
 
 # watchlist
 demoProfile1WatchlistItem1 = WatchlistItem.create({profile_id: 1, video_id: 1})
