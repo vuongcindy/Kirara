@@ -202,6 +202,120 @@ love_is_blind_japan.background.attach(io: love_is_blind_japan_bg, filename:'love
 love_is_blind_japan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan.mp4')
 love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-is-blind-japan.mp4')
 
+# 10 lion king
+lion_king = Video.create!(
+    title: "The Lion King", 
+    description:"This Disney animated feature follows the adventures of the young lion Simba (Jonathan Taylor Thomas), the heir of his father, Mufasa (James Earl Jones). Simba's wicked uncle, Scar (Jeremy Irons), plots to usurp Mufasa's throne by luring father and son into a stampede of wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Matthew Broderick) to take back his homeland from Scar with the help of his friends Timon (Nathan Lane) and Pumbaa (Ernie Sabella).", 
+    studio: "Disney", 
+    genre: "Adventure", 
+    year: 1994, 
+    runtime: 5220, 
+    video_type: "movie"
+)
+lion_king_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
+lion_king.thumbnail.attach(io: lion_king_thumbnail, filename: 'lion-king-thumbnail.jpeg')
+
+lion_king_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-bg.jpg')
+lion_king.background.attach(io: lion_king_bg, filename:'lion-king-bg.jpg')
+
+lion_king_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/the-lion-king.mp4')
+lion_king.video.attach(io: lion_king_video, filename: 'the-lion-king.mp4')
+
+# 11 inuyasha
+inuyasha = Video.create!(
+    title: "Inuyasha", 
+    description:"InuYasha is the story of a dog half-demon who is constantly after a jewel of immense power, the Shikon jewel, also no as the Shikon no tama. He lives in the forest near the village where the jewel is protected by a priestess named Kikyo.", 
+    studio: "Sunrise", 
+    genre: "Romance", 
+    year: 1996 - 2004, 
+    runtime: 241200, 
+    video_type: "series"
+)
+inuyasha_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
+inuyasha.thumbnail.attach(io: inuyasha_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
+
+inuyasha_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-bg.jpg')
+inuyasha.background.attach(io: inuyasha_bg, filename:'inuyasha-bg.jpg')
+
+inuyasha_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha.mp4')
+inuyasha.video.attach(io: inuyasha_video, filename: 'inuyasha.mp4')
+
+# 12 toradora
+toradora = Video.create!(
+    title: "Toradora!", 
+    description:"Toradora! revolves around Ryuuji Takasu, despite his gentle personality, his eyes make him look like an intimidating delinquent. Class rearrangements on his second high school year put him together with his best friend, Yusaku Kitamura, and his hidden crush, Minori Kushieda.", 
+    studio: "NIS America", 
+    genre: "Romance", 
+    year: 2008 - 2009, 
+    runtime: 40500, 
+    video_type: "series"
+)
+toradora_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
+toradora.thumbnail.attach(io: toradora_thumbnail, filename: 'toradora-thumbnail.jpeg')
+
+toradora_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-bg.jpg')
+toradora.background.attach(io: toradora_bg, filename:'toradora-bg.jpg')
+
+toradora_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora.mp4')
+toradora.video.attach(io: toradora_video, filename: 'toradora.mp4')
+
+# 13 one piece
+one_piece = Video.create!(
+    title: "One Piece", 
+    description:"One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the legendary treasure known as the One Piece and become the King of the Pirates. Alongside a crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh Tale, the hidden island containing the One Piece.Nov 6, 2021", 
+    studio: "Crunchyroll", 
+    genre: "Action", 
+    year: 1999 - 2022, 
+    runtime: 1238400, 
+    video_type: "series"
+)
+one_piece_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
+one_piece.thumbnail.attach(io: one_piece_thumbnail, filename: 'one-piece-thumbnail.jpeg')
+
+one_piece_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-bg.jpg')
+one_piece.background.attach(io: one_piece_bg, filename:'one-piece-bg.jpg')
+
+one_piece_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece.mp4')
+one_piece.video.attach(io: one_piece_video, filename: 'one-piece.mp4')
+
+# 15 spy x family
+spy_x_family = Video.create!(
+    title: "Spy x Family", 
+    description:"A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together. A spy on an undercover mission gets married and adopts a child as part of his cover.", 
+    studio: "VIZ Media", 
+    genre: "Action", 
+    year: 2019, 
+    runtime: 12600, 
+    video_type: "series"
+)
+spy_x_family_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
+spy_x_family.thumbnail.attach(io: spy_x_family_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
+
+spy_x_family_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-bg.jpg')
+spy_x_family.background.attach(io: spy_x_family_bg, filename:'spy-x-family-bg.jpg')
+
+spy_x_family_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family.mp4')
+spy_x_family.video.attach(io: spy_x_family_video, filename: 'spy-x-family.mp4')
+
+# 16 rurouni kenshin
+rurouni_kenshin = Video.create!(
+    title: "Rurouni Kenshin", 
+    description:"Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war. His tale is about redemption of his past and all his murders by helping those in trouble with his reverse-blade sword, the sakabato.", 
+    studio: "Viz Media", 
+    genre: "Action", 
+    year: 1996 - 1998, 
+    runtime: 142200, 
+    video_type: "series"
+)
+rurouni_kenshin_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-thumbnail.jpeg')
+rurouni_kenshin.thumbnail.attach(io: rurouni_kenshin_thumbnail, filename: 'rurouni-kenshin-thumbnail.jpeg')
+
+rurouni_kenshin_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-bg.jpg')
+rurouni_kenshin.background.attach(io: rurouni_kenshin_bg, filename:'rurouni-kenshin-bg.jpg')
+
+rurouni_kenshin_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin.mp4')
+rurouni_kenshin.video.attach(io: rurouni_kenshin_video, filename: 'rurouni-kenshin.mp4')
+
 # watchlist
 demoProfile1WatchlistItem1 = WatchlistItem.create({profile_id: 1, video_id: 1})
 demoProfile1WatchlistItem2 = WatchlistItem.create({profile_id: 1, video_id: 5})
