@@ -280,13 +280,13 @@ placeholder.video.attach(io: placeholder_video, filename: '')
 
 # 15 spy x family
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "Spy x Family", 
+    description:"A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together. A spy on an undercover mission gets married and adopts a child as part of his cover.", 
+    studio: "VIZ Media", 
+    genre: "Action", 
+    year: 2019, 
+    runtime: 12600, 
+    video_type: "series"
 )
 placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
 placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
