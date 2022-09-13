@@ -204,13 +204,13 @@ love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-
 
 # 10 lion king
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "The Lion King", 
+    description:"This Disney animated feature follows the adventures of the young lion Simba (Jonathan Taylor Thomas), the heir of his father, Mufasa (James Earl Jones). Simba's wicked uncle, Scar (Jeremy Irons), plots to usurp Mufasa's throne by luring father and son into a stampede of wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Matthew Broderick) to take back his homeland from Scar with the help of his friends Timon (Nathan Lane) and Pumbaa (Ernie Sabella).", 
+    studio: "Disney", 
+    genre: "Adventure", 
+    year: 1994, 
+    runtime: 5220, 
+    video_type: "movie"
 )
 placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
 placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'lion-king-thumbnail.jpeg')
