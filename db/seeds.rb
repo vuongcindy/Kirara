@@ -203,7 +203,7 @@ love_is_blind_japan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/
 love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-is-blind-japan.mp4')
 
 # 10 lion king
-placeholder = Video.create!(
+lion_king = Video.create!(
     title: "The Lion King", 
     description:"This Disney animated feature follows the adventures of the young lion Simba (Jonathan Taylor Thomas), the heir of his father, Mufasa (James Earl Jones). Simba's wicked uncle, Scar (Jeremy Irons), plots to usurp Mufasa's throne by luring father and son into a stampede of wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Matthew Broderick) to take back his homeland from Scar with the help of his friends Timon (Nathan Lane) and Pumbaa (Ernie Sabella).", 
     studio: "Disney", 
@@ -212,17 +212,17 @@ placeholder = Video.create!(
     runtime: 5220, 
     video_type: "movie"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'lion-king-thumbnail.jpeg')
+lion_king_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
+lion_king.thumbnail.attach(io: lion_king_thumbnail, filename: 'lion-king-thumbnail.jpeg')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+lion_king_bg = URI.open('')
+lion_king.background.attach(io: lion_king_bg, filename:'')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+lion_king_video = URI.open('')
+lion_king.video.attach(io: lion_king_video, filename: '')
 
 # 11 inuyasha
-placeholder = Video.create!(
+inuyasha = Video.create!(
     title: "Inuyasha", 
     description:"InuYasha is the story of a dog half-demon who is constantly after a jewel of immense power, the Shikon jewel, also no as the Shikon no tama. He lives in the forest near the village where the jewel is protected by a priestess named Kikyo.", 
     studio: "Sunrise", 
@@ -231,17 +231,17 @@ placeholder = Video.create!(
     runtime: 241200, 
     video_type: "series"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
+inuyasha_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
+inuyasha.thumbnail.attach(io: inuyasha_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+inuyasha_bg = URI.open('')
+inuyasha.background.attach(io: inuyasha_bg, filename:'')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+inuyasha_video = URI.open('')
+inuyasha.video.attach(io: inuyasha_video, filename: '')
 
 # 12 toradora
-placeholder = Video.create!(
+toradora = Video.create!(
     title: "Toradora!", 
     description:"Toradora! revolves around Ryuuji Takasu, despite his gentle personality, his eyes make him look like an intimidating delinquent. Class rearrangements on his second high school year put him together with his best friend, Yusaku Kitamura, and his hidden crush, Minori Kushieda.", 
     studio: "NIS America", 
@@ -250,17 +250,17 @@ placeholder = Video.create!(
     runtime: 40500, 
     video_type: "series"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'toradora-thumbnail.jpeg')
+toradora_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
+toradora.thumbnail.attach(io: toradora_thumbnail, filename: 'toradora-thumbnail.jpeg')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+toradora_bg = URI.open('')
+toradora.background.attach(io: toradora_bg, filename:'')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+toradora_video = URI.open('')
+toradora.video.attach(io: toradora_video, filename: '')
 
 # 13 one piece
-placeholder = Video.create!(
+one_piece = Video.create!(
     title: "One Piece", 
     description:"One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the legendary treasure known as the One Piece and become the King of the Pirates. Alongside a crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh Tale, the hidden island containing the One Piece.Nov 6, 2021", 
     studio: "Crunchyroll", 
@@ -269,17 +269,17 @@ placeholder = Video.create!(
     runtime: 1238400, 
     video_type: "series"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'one-piece-thumbnail.jpeg')
+one_piece_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
+one_piece.thumbnail.attach(io: one_piece_thumbnail, filename: 'one-piece-thumbnail.jpeg')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+one_piece_bg = URI.open('')
+one_piece.background.attach(io: one_piece_bg, filename:'')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+one_piece_video = URI.open('')
+one_piece.video.attach(io: one_piece_video, filename: '')
 
 # 15 spy x family
-placeholder = Video.create!(
+spy_x_family = Video.create!(
     title: "Spy x Family", 
     description:"A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together. A spy on an undercover mission gets married and adopts a child as part of his cover.", 
     studio: "VIZ Media", 
@@ -288,27 +288,27 @@ placeholder = Video.create!(
     runtime: 12600, 
     video_type: "series"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
+spy_x_family_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
+spy_x_family.thumbnail.attach(io: spy_x_family_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
 
-placeholder_bg = URI.open('')
-placeholder.background.attach(io: placeholder_bg, filename:'')
+spy_x_family_bg = URI.open('')
+spy_x_family.background.attach(io: spy_x_family_bg, filename:'')
 
-placeholder_video = URI.open('')
-placeholder.video.attach(io: placeholder_video, filename: '')
+spy_x_family_video = URI.open('')
+spy_x_family.video.attach(io: spy_x_family_video, filename: '')
 
-# 16 cowboy bepop
+# 16 rurouni kenshin
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "Rurouni Kenshin", 
+    description:"Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war. His tale is about redemption of his past and all his murders by helping those in trouble with his reverse-blade sword, the sakabato.", 
+    studio: "Viz Media", 
+    genre: "Action", 
+    year: 1996 - 1998, 
+    runtime: 142200, 
+    video_type: "series"
 )
-placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/cowboy-bebop-thumbnail.jpeg')
-placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'cowboy-bebop-thumbnail.jpeg')
+placeholder_thumbnail = URI.open('')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: '')
 
 placeholder_bg = URI.open('')
 placeholder.background.attach(io: placeholder_bg, filename:'')
