@@ -242,13 +242,13 @@ placeholder.video.attach(io: placeholder_video, filename: '')
 
 # 12 toradora
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "Toradora!", 
+    description:"Toradora! revolves around Ryuuji Takasu, despite his gentle personality, his eyes make him look like an intimidating delinquent. Class rearrangements on his second high school year put him together with his best friend, Yusaku Kitamura, and his hidden crush, Minori Kushieda.", 
+    studio: "NIS America", 
+    genre: "Romance", 
+    year: 2008 - 2009, 
+    runtime: 40500, 
+    video_type: "series"
 )
 placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
 placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'toradora-thumbnail.jpeg')
