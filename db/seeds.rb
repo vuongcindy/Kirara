@@ -218,8 +218,8 @@ lion_king.thumbnail.attach(io: lion_king_thumbnail, filename: 'lion-king-thumbna
 lion_king_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-bg.jpg')
 lion_king.background.attach(io: lion_king_bg, filename:'lion-king-bg.jpg')
 
-lion_king_video = URI.open('')
-lion_king.video.attach(io: lion_king_video, filename: '')
+lion_king_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/the-lion-king.mp4')
+lion_king.video.attach(io: lion_king_video, filename: 'the-lion-king.mp4')
 
 # 11 inuyasha
 inuyasha = Video.create!(
@@ -237,8 +237,8 @@ inuyasha.thumbnail.attach(io: inuyasha_thumbnail, filename: 'inuyasha-thumbnail.
 inuyasha_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-bg.jpg')
 inuyasha.background.attach(io: inuyasha_bg, filename:'inuyasha-bg.jpg')
 
-inuyasha_video = URI.open('')
-inuyasha.video.attach(io: inuyasha_video, filename: '')
+inuyasha_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha.mp4')
+inuyasha.video.attach(io: inuyasha_video, filename: 'inuyasha.mp4')
 
 # 12 toradora
 toradora = Video.create!(
@@ -256,8 +256,8 @@ toradora.thumbnail.attach(io: toradora_thumbnail, filename: 'toradora-thumbnail.
 toradora_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-bg.jpg')
 toradora.background.attach(io: toradora_bg, filename:'toradora-bg.jpg')
 
-toradora_video = URI.open('')
-toradora.video.attach(io: toradora_video, filename: '')
+toradora_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora.mp4')
+toradora.video.attach(io: toradora_video, filename: 'toradora.mp4')
 
 # 13 one piece
 one_piece = Video.create!(
@@ -275,8 +275,8 @@ one_piece.thumbnail.attach(io: one_piece_thumbnail, filename: 'one-piece-thumbna
 one_piece_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-bg.jpg')
 one_piece.background.attach(io: one_piece_bg, filename:'one-piece-bg.jpg')
 
-one_piece_video = URI.open('')
-one_piece.video.attach(io: one_piece_video, filename: '')
+one_piece_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece.mp4')
+one_piece.video.attach(io: one_piece_video, filename: 'one-piece.mp4')
 
 # 15 spy x family
 spy_x_family = Video.create!(
@@ -294,8 +294,8 @@ spy_x_family.thumbnail.attach(io: spy_x_family_thumbnail, filename: 'spy-x-famil
 spy_x_family_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-bg.jpg')
 spy_x_family.background.attach(io: spy_x_family_bg, filename:'spy-x-family-bg.jpg')
 
-spy_x_family_video = URI.open('')
-spy_x_family.video.attach(io: spy_x_family_video, filename: '')
+spy_x_family_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family.mp4')
+spy_x_family.video.attach(io: spy_x_family_video, filename: 'spy-x-family.mp4')
 
 # 16 rurouni kenshin
 rurouni_kenshin = Video.create!(
@@ -313,8 +313,8 @@ rurouni_kenshin.thumbnail.attach(io: rurouni_kenshin_thumbnail, filename: 'rurou
 rurouni_kenshin_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-bg.jpg')
 rurouni_kenshin.background.attach(io: rurouni_kenshin_bg, filename:'rurouni-kenshin-bg.jpg')
 
-rurouni_kenshin_video = URI.open('')
-rurouni_kenshin.video.attach(io: rurouni_kenshin_video, filename: '')
+rurouni_kenshin_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin.mp4')
+rurouni_kenshin.video.attach(io: rurouni_kenshin_video, filename: 'rurouni-kenshin.mp4')
 
 # watchlist
 demoProfile1WatchlistItem1 = WatchlistItem.create({profile_id: 1, video_id: 1})
