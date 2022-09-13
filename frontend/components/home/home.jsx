@@ -41,6 +41,7 @@ class Home extends React.Component {
                     
                     <label className="genre">Adventure
                         <div className="adventure-genre-container">
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <Link to="/videos/4">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/brother-bear-thumbnail.jpeg" className="thumbnail-placeholder"/>
@@ -62,7 +63,9 @@ class Home extends React.Component {
                             <Link to="/videos/6">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <Link to="/videos/8">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/tarzan-thumbnail.jpeg" className="thumbnail-placeholder"/>
@@ -76,8 +79,11 @@ class Home extends React.Component {
                     <label className="genre">Action
                     <br />
                         <div className="action-genre-container">
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/cowboy-bebop-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <Link to="/videos/2">
                             <button>

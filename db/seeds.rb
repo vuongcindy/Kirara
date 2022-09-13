@@ -202,6 +202,120 @@ love_is_blind_japan.background.attach(io: love_is_blind_japan_bg, filename:'love
 love_is_blind_japan_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/love-is-blind-japan.mp4')
 love_is_blind_japan.video.attach(io: love_is_blind_japan_video, filename: 'love-is-blind-japan.mp4')
 
+# 10 lion king
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'lion-king-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
+# 11 inuyasha
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
+# 12 toradora
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'toradora-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
+# 13 one piece
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'one-piece-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
+# 15 spy x family
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'spy-x-family-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
+# 16 cowboy bepop
+placeholder = Video.create!(
+    title: "", 
+    description:"", 
+    studio: "", 
+    genre: "", 
+    year: , 
+    runtime: , 
+    video_type: ""
+)
+placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/cowboy-bebop-thumbnail.jpeg')
+placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'cowboy-bebop-thumbnail.jpeg')
+
+placeholder_bg = URI.open('')
+placeholder.background.attach(io: placeholder_bg, filename:'')
+
+placeholder_video = URI.open('')
+placeholder.video.attach(io: placeholder_video, filename: '')
+
 # watchlist
 demoProfile1WatchlistItem1 = WatchlistItem.create({profile_id: 1, video_id: 1})
 demoProfile1WatchlistItem2 = WatchlistItem.create({profile_id: 1, video_id: 5})
