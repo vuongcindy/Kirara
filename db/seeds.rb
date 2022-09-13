@@ -261,13 +261,13 @@ placeholder.video.attach(io: placeholder_video, filename: '')
 
 # 13 one piece
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "One Piece", 
+    description:"One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the legendary treasure known as the One Piece and become the King of the Pirates. Alongside a crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh Tale, the hidden island containing the One Piece.Nov 6, 2021", 
+    studio: "Crunchyroll", 
+    genre: "Action", 
+    year: 1999 - 2022, 
+    runtime: 1238400, 
+    video_type: "series"
 )
 placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg')
 placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'one-piece-thumbnail.jpeg')
