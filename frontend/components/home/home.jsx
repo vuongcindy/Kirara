@@ -84,7 +84,7 @@ class Home extends React.Component {
                             {/* seed */}
                             <img src="https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/cowboy-bebop-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <img src="https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             <Link to="/videos/2">
                             <button>
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/arcane-league-thumbnail.jpeg" className="thumbnail-placeholder"/>
