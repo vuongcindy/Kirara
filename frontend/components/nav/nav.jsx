@@ -43,7 +43,7 @@ class Nav extends React.Component {
                             <span>Watchlist</span>
                         </Link> 
                     </button>
-                    <button>
+                    {/* <button>
                         <i className="fa fa-star" id="star-logo-button" ></i> 
                         &nbsp; 
                         <span>Studios</span>
@@ -57,7 +57,7 @@ class Nav extends React.Component {
                         <i className="fa fa-television" id="tv-logo-button" ></i> 
                         &nbsp; 
                         <span>Series</span>
-                    </button>
+                    </button> */}
                 </div>
                 <button className="session-end" onClick={this.handleLogoutClick}>Logout</button>
                 <Link to="/edit-profiles">

@@ -147,56 +147,6 @@
         }
     }
 
-    .header-container {
-        background-color: #0e0b14;
-        color: white;
-        text-align: center;
-        position: fixed;
-        width: 98.8%;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        
     
-        .logo {
-            height: 75px;
-            width: 150px;
-        }
-    
-        .edit-profile-button {
-            display: flex;
-            position: fixed;
-            height: 50px;
-            width: 50px;
-            top: 12.5px;
-            right: 2%;
-            border-radius: 50%;
-        }
-        .session-end {
-            display: flex;
-            position: fixed;
-            top: 30px;
-            right: 7%;
-        }
-    
-        .button-container {
-            position: fixed;
-            width: 55%;
-            left: 12%;
-            top: 30px;
-            display: flex;
-            justify-content: space-between;
-    
-            span {
-                text-transform: uppercase;
-                letter-spacing: 1.5px;
-
-                &:hover {
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-            }
-        }  
-    }
 }
 

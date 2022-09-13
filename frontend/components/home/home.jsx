@@ -31,13 +31,13 @@ class Home extends React.Component {
                 </div>
                 <br />
                 <div className="categories-container">
-                    <div className="studio-container">
+                    {/* <div className="studio-container">
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/studio-ghbili-thumbnail.jpeg" className="logo-placeholder"/>
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/disney-logo.jpeg" className="logo-placeholder"/>
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/cloverworks-thumbnail.jpeg" className="logo-placeholder"/>
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/bandai-thumbnail.jpeg" className="logo-placeholder"/>
                         <img src="https://kirara.s3.us-west-1.amazonaws.com/netflix-logo.jpeg" className="logo-placeholder"/>
-                    </div>
+                    </div> */}
                     
                     <label className="genre">Adventure
                         <div className="adventure-genre-container">
