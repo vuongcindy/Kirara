@@ -223,13 +223,13 @@ placeholder.video.attach(io: placeholder_video, filename: '')
 
 # 11 inuyasha
 placeholder = Video.create!(
-    title: "", 
-    description:"", 
-    studio: "", 
-    genre: "", 
-    year: , 
-    runtime: , 
-    video_type: ""
+    title: "Inuyasha", 
+    description:"InuYasha is the story of a dog half-demon who is constantly after a jewel of immense power, the Shikon jewel, also no as the Shikon no tama. He lives in the forest near the village where the jewel is protected by a priestess named Kikyo.", 
+    studio: "Sunrise", 
+    genre: "Romance", 
+    year: 1996 - 2004, 
+    runtime: 241200, 
+    video_type: "series"
 )
 placeholder_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg')
 placeholder.thumbnail.attach(io: placeholder_thumbnail, filename: 'inuyasha-thumbnail.jpeg')
