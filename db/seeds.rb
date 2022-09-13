@@ -307,8 +307,8 @@ rurouni_kenshin = Video.create!(
     runtime: 142200, 
     video_type: "series"
 )
-rurouni_kenshin_thumbnail = URI.open('')
-rurouni_kenshin.thumbnail.attach(io: rurouni_kenshin_thumbnail, filename: '')
+rurouni_kenshin_thumbnail = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-thumbnail.jpeg')
+rurouni_kenshin.thumbnail.attach(io: rurouni_kenshin_thumbnail, filename: 'rurouni-kenshin-thumbnail.jpeg')
 
 rurouni_kenshin_bg = URI.open('https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-bg.jpg')
 rurouni_kenshin.background.attach(io: rurouni_kenshin_bg, filename:'rurouni-kenshin-bg.jpg')
