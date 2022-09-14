@@ -278,7 +278,7 @@ one_piece.background.attach(io: one_piece_bg, filename:'one-piece-bg.jpg')
 one_piece_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/one-piece.mp4')
 one_piece.video.attach(io: one_piece_video, filename: 'one-piece.mp4')
 
-# 15 spy x family
+# 14 spy x family
 spy_x_family = Video.create!(
     title: "Spy x Family", 
     description:"A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together. A spy on an undercover mission gets married and adopts a child as part of his cover.", 
@@ -297,7 +297,7 @@ spy_x_family.background.attach(io: spy_x_family_bg, filename:'spy-x-family-bg.jp
 spy_x_family_video = URI.open('https://kirara.s3.us-west-1.amazonaws.com/spy-x-family.mp4')
 spy_x_family.video.attach(io: spy_x_family_video, filename: 'spy-x-family.mp4')
 
-# 16 rurouni kenshin
+# 15 rurouni kenshin
 rurouni_kenshin = Video.create!(
     title: "Rurouni Kenshin", 
     description:"Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war. His tale is about redemption of his past and all his murders by helping those in trouble with his reverse-blade sword, the sakabato.", 
