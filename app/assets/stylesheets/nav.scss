@@ -7,7 +7,7 @@
         top: 0;
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
     
         .logo {
             height: 75px;
@@ -35,7 +35,7 @@
         .button-container {
             display: flex;
             position: fixed;
-            // background-color: purple;
+            background-color: purple;
             width: 55%;
             left: 175px;
     
