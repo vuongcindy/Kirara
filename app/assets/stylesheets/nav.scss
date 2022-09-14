@@ -3,7 +3,7 @@
         color: white;
         text-align: center;
         position: fixed;
-        width: 98.8%;
+        width: 100%;
         top: 0;
         display: flex;
         justify-content: space-between;
@@ -20,27 +20,29 @@
             height: 50px;
             width: 50px;
             top: 12.5px;
-            right: 2%;
+            // right: 2%;
+            right: 12.5px;
             border-radius: 50%;
         }
+        
         .session-end {
             display: flex;
             position: fixed;
             top: 30px;
-            right: 7%;
+            right: 75px;
         }
     
         .button-container {
-            position: fixed;
-            width: 55%;
-            left: 12%;
-            top: 30px;
             display: flex;
-            justify-content: space-between;
+            position: fixed;
+            // background-color: purple;
+            width: 55%;
+            left: 175px;
     
             span {
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
+                margin-right: 50px;
 
                 &:hover {
                     cursor: pointer;
