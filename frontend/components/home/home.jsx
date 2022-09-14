@@ -1,9 +1,8 @@
 import React from "react"
-// import HeaderHome from "../ui_blocks/header_home"
 import { Link } from "react-router-dom";
 // import Carousel from "./carousel";
 import Footer from "../ui_blocks/footer";
-import Nav from "../nav/nav_container"
+import Nav from "../nav/nav_container";
 
 class Home extends React.Component {
     constructor(props) {
