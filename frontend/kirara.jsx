@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // window.localStorage.setItem("currentProfile", "test1")
-    console.log("localStorage",localStorage)
-    console.log("window.localStorage", window.localStorage)
-    console.log("store.getState()",store.getState())
+    // console.log("localStorage",localStorage)
+    // console.log("window.localStorage", window.localStorage)
+    // console.log("store.getState()",store.getState())
 
 
     store.subscribe(() => {
