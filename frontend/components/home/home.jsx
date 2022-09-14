@@ -40,8 +40,9 @@ class Home extends React.Component {
                     
                     <label className="genre">Adventure
                         <div className="adventure-genre-container">
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/10">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/lion-king-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
                             <Link to="/videos/4">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/brother-bear-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>
@@ -62,10 +63,12 @@ class Home extends React.Component {
                             <Link to="/videos/6">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/princess-mononoke-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg" className="thumbnail-placeholder"/>
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/11">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/inuyasha-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
+                            <Link to="/videos/12">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/toradora-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
                             <Link to="/videos/8">
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/tarzan-thumbnail.jpeg" className="thumbnail-placeholder"/>
                             </Link>
@@ -78,12 +81,15 @@ class Home extends React.Component {
                     <label className="genre">Action
                     <br />
                         <div className="action-genre-container">
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg" className="thumbnail-placeholder"/>
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg" className="thumbnail-placeholder"/>
-                            {/* seed */}
-                            <img src="https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            <Link to="/videos/13">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/one-piece-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
+                            <Link to="/videos/14">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/spy-x-family-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
+                            <Link to="/videos/15">
+                                <img src="https://kirara.s3.us-west-1.amazonaws.com/rurouni-kenshin-thumbnail.jpeg" className="thumbnail-placeholder"/>
+                            </Link>
                             <Link to="/videos/2">
                             <button>
                                 <img src="https://kirara.s3.us-west-1.amazonaws.com/arcane-league-thumbnail.jpeg" className="thumbnail-placeholder"/>
