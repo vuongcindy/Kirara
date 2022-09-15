@@ -1,5 +1,7 @@
 .splash-container {
-    background-image: image-url('splash');
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(26, 29, 41, 0.7)),image-url('splash') ;
+    background-size: cover;
     // background-color: blue;
     position: fixed;
     height: 98%;
