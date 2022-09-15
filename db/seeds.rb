@@ -227,7 +227,7 @@ inuyasha = Video.create!(
     description:"InuYasha is the story of a dog half-demon who is constantly after a jewel of immense power, the Shikon jewel, also no as the Shikon no tama. He lives in the forest near the village where the jewel is protected by a priestess named Kikyo.", 
     studio: "Sunrise", 
     genre: "Romance", 
-    year: 1996 - 2004, 
+    year: 1996, 
     runtime: 241200, 
     video_type: "series"
 )
@@ -246,7 +246,7 @@ toradora = Video.create!(
     description:"Toradora! revolves around Ryuuji Takasu, despite his gentle personality, his eyes make him look like an intimidating delinquent. Class rearrangements on his second high school year put him together with his best friend, Yusaku Kitamura, and his hidden crush, Minori Kushieda.", 
     studio: "NIS America", 
     genre: "Romance", 
-    year: 2008 - 2009, 
+    year: 2008, 
     runtime: 40500, 
     video_type: "series"
 )
@@ -265,7 +265,7 @@ one_piece = Video.create!(
     description:"One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the legendary treasure known as the One Piece and become the King of the Pirates. Alongside a crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh Tale, the hidden island containing the One Piece.Nov 6, 2021", 
     studio: "Crunchyroll", 
     genre: "Action", 
-    year: 1999 - 2022, 
+    year: 1999, 
     runtime: 1238400, 
     video_type: "series"
 )
@@ -303,7 +303,7 @@ rurouni_kenshin = Video.create!(
     description:"Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war. His tale is about redemption of his past and all his murders by helping those in trouble with his reverse-blade sword, the sakabato.", 
     studio: "Viz Media", 
     genre: "Action", 
-    year: 1996 - 1998, 
+    year: 1996, 
     runtime: 142200, 
     video_type: "series"
 )
