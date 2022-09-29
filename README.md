@@ -23,7 +23,7 @@
 ![watchlist-gif](https://kirara.s3.us-west-1.amazonaws.com/watchlist.gif)
 + Users can watch videos
 ![watch-video-gif](https://kirara.s3.us-west-1.amazonaws.com/watch-video.gif)
-<img src="https://kirara.s3.us-west-1.amazonaws.com/watch-video.gif" alt="drawing" width="200"/>
+<!-- <img src="https://kirara.s3.us-west-1.amazonaws.com/watch-video.gif" alt="drawing" width="200"/> -->
 
 ## Upcoming Improvements
 + Add media queries to account for different screen sizes
