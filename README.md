@@ -19,8 +19,11 @@
 ![profile-screenshot](https://kirara.s3.us-west-1.amazonaws.com/profile-screenshot.png)
 + Homepage where users can view list of videos available on platform
 ![home-screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
-+ Users can watch videos 
++ Users can add videos to profile watchlist
 ![watchlist-gif](https://kirara.s3.us-west-1.amazonaws.com/watchlist.gif)
++ Users can watch videos
+![watch-video-gif](https://kirara.s3.us-west-1.amazonaws.com/watch-video.gif)
+<img src="https://kirara.s3.us-west-1.amazonaws.com/watch-video.gif" alt="drawing" width="200"/>
 
 ## Upcoming Improvements
 + Add media queries to account for different screen sizes
