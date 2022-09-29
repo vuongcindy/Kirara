@@ -20,8 +20,6 @@
 + Homepage where users can view list of videos available on platform
 ![home-screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
 
-## Upcoming Features
-+ Viewing video descriptions
-+ Watching videos
-+ Ability to add videos to watchlist
-+ Search bar
+## Upcoming Improvements
++ Add media queries to account for different screen sizes
++ Add list of avatar images users can choose for their profiles
