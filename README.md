@@ -1,6 +1,6 @@
 # Kirara
 
-[Kirara](https://github.com/vuongcindy/Kirara) is a Disney+ clone where users can stream movies or television shows. Users are able to sign up or log into an existing account and browse through any movies and television shows available on the platform.
+[Kirara](https://github.com/vuongcindy/Kirara) is a single-page full stack Disney+ clone where users can stream movies or television shows. Users are able to sign up or log into an existing account and browse through any movies and television shows available on the platform.
 
 ## Technologies Utilized
 + Ruby on Rails
@@ -19,9 +19,9 @@
 ![profile-screenshot](https://kirara.s3.us-west-1.amazonaws.com/profile-screenshot.png)
 + Homepage where users can view list of videos available on platform
 ![home-screenshot](https://kirara.s3.us-west-1.amazonaws.com/home-screenshot.png)
++ Users can watch videos 
+![watchlist-gif](https://kirara.s3.us-west-1.amazonaws.com/watchlist.gif)
 
-## Upcoming Features
-+ Viewing video descriptions
-+ Watching videos
-+ Ability to add videos to watchlist
-+ Search bar
+## Upcoming Improvements
++ Add media queries to account for different screen sizes
++ Add list of avatar images users can choose for their profiles
